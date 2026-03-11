@@ -1,0 +1,2018 @@
+[
+  {
+    "step": 0,
+    "date": "2020-01-02",
+    "price": 3257.85009765625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts -1.26% return with all 5 days trending down, signaling weakness ahead. Remaining in cash protects capital while we await confirmation of the bearish signal or a clearer entry point.",
+    "portfolio_value": 100000.0
+  },
+  {
+    "step": 1,
+    "date": "2020-01-09",
+    "price": 3274.699951171875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts -1.31% return with all 5 days down\u2014strong bearish consensus. Despite recent 20-day strength, the unanimous downside signal warrants staying in cash. Will reassess when forecast improves or downside confirms.",
+    "portfolio_value": 100000.0
+  },
+  {
+    "step": 2,
+    "date": "2020-01-16",
+    "price": 3316.81005859375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts -1.97% return with all 5 days down\u2014strong bearish consensus. Despite recent market strength, the unanimous downside prediction suggests waiting for better entry. Currently in cash, so no position to defend.",
+    "portfolio_value": 100000.0
+  },
+  {
+    "step": 3,
+    "date": "2020-01-24",
+    "price": 3295.469970703125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts 5 consecutive down days with -0.375% expected return and elevated volatility. Strong bearish consensus across the forecast period warrants staying in cash rather than buying into weakness.",
+    "portfolio_value": 100000.0
+  },
+  {
+    "step": 4,
+    "date": "2020-01-31",
+    "price": 3225.52001953125,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts 5 consecutive up days (+1.12% expected return) with low volatility. Price above 50-day MA confirms uptrend. Strong bullish signal warrants entry into cash position.",
+    "portfolio_value": 100000.0
+  },
+  {
+    "step": 5,
+    "date": "2020-02-07",
+    "price": 3327.7099609375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts +0.962% return with bullish 3-up/2-down trend and low volatility. Already invested with +$3,168 unrealized gain. Price above 50-day MA confirms uptrend. Hold position to capture continued upside.",
+    "portfolio_value": 103168.16949786288
+  },
+  {
+    "step": 6,
+    "date": "2020-02-14",
+    "price": 3380.159912109375,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous 5-day downtrend (-1.816% return) with strong bearish consensus. Lock in +$4,794 unrealized gain before forecasted pullback. Recent trade history shows similar bearish signals preceded market weakness.",
+    "portfolio_value": 104794.26237139269
+  },
+  {
+    "step": 7,
+    "date": "2020-02-24",
+    "price": 3225.889892578125,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5-day uptrend (+2.374% return) with low volatility. Price pullback below 50-day MA provides attractive entry. Strong bullish consensus warrants deploying cash position.",
+    "portfolio_value": 104794.26237139269
+  },
+  {
+    "step": 8,
+    "date": "2020-03-02",
+    "price": 3090.22998046875,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts -2.86% return with price 5.38% below 50-day MA, confirming downtrend. Lock in +$387 gain before forecasted weakness materializes. Bearish technical setup warrants exiting position to cash.",
+    "portfolio_value": 100387.29843391366
+  },
+  {
+    "step": 9,
+    "date": "2020-03-09",
+    "price": 2746.56005859375,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5-day uptrend (+7.5% return) with all days pointing up. Market is deeply oversold (15.5% below 50-day MA), providing attractive entry. Strong bullish consensus warrants deploying cash position to capture forecasted recovery.",
+    "portfolio_value": 100387.29843391365
+  },
+  {
+    "step": 10,
+    "date": "2020-03-16",
+    "price": 2386.1298828125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day uptrend (+12.6% return) with all days pointing up. Market is deeply oversold (25% below 50-day MA), and the strong bullish consensus supports holding through the forecasted recovery phase.",
+    "portfolio_value": 87213.5061814821
+  },
+  {
+    "step": 11,
+    "date": "2020-03-23",
+    "price": 2237.39990234375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day uptrend (+7.78% return) with all days pointing up. Market is deeply oversold (28% below 50-day MA), and strong bullish consensus supports holding through the forecasted recovery phase.",
+    "portfolio_value": 81777.39678759866
+  },
+  {
+    "step": 12,
+    "date": "2020-03-30",
+    "price": 2626.64990234375,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts -6.6% expected return despite bullish trend\u2014a contradictory signal indicating model uncertainty. Market remains deeply oversold (13.4% below 50-day MA) and recent similar setups have resulted in significant losses. Exit position to preserve capital and avoid further deterioration.",
+    "portfolio_value": 96004.55915862936
+  },
+  {
+    "step": 13,
+    "date": "2020-04-06",
+    "price": 2663.679931640625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts -4.39% return with unanimous 5-day downtrend (0 up, 5 down). Price is 9.83% below 50-day MA confirming bearish technicals. Stay in cash to avoid losses during forecasted decline.",
+    "portfolio_value": 96004.55915862936
+  },
+  {
+    "step": 14,
+    "date": "2020-04-14",
+    "price": 2846.06005859375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts -2.71% return with unanimous 5-day downtrend (0 up, 5 down). Price is 1.83% below 50-day MA confirming bearish technicals. Remain in cash to avoid losses during forecasted decline.",
+    "portfolio_value": 96004.55915862936
+  },
+  {
+    "step": 15,
+    "date": "2020-04-21",
+    "price": 2736.56005859375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day downtrend (-0.43% return) with all days pointing down. Price is 4% below 50-day MA and volatility is elevated. Remain in cash to avoid losses during the forecasted decline.",
+    "portfolio_value": 96004.55915862936
+  },
+  {
+    "step": 16,
+    "date": "2020-04-28",
+    "price": 2863.389892578125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day downtrend (-2.38% return, 0 up/5 down) with elevated volatility (4.35% spread). Despite recent 9% rally, bearish consensus and high uncertainty argue against entry. Remain in cash to avoid losses during forecasted decline.",
+    "portfolio_value": 96004.55915862936
+  },
+  {
+    "step": 17,
+    "date": "2020-05-05",
+    "price": 2868.43994140625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts -2.15% return with 4 down days vs. 1 up day and elevated volatility (4.69% spread). Despite recent 7.69% rally, the bearish consensus and high uncertainty argue against entry. Remain in cash to avoid losses during the forecasted decline.",
+    "portfolio_value": 96004.55915862936
+  },
+  {
+    "step": 18,
+    "date": "2020-05-12",
+    "price": 2870.1201171875,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts +1.24% return with bullish 3-up/2-down trend. Price is 5.14% above 50-day MA confirming uptrend. After weeks of defensive holds, this positive forecast and technical confirmation warrant entry into the market.",
+    "portfolio_value": 96004.55915862936
+  },
+  {
+    "step": 19,
+    "date": "2020-05-19",
+    "price": 2922.93994140625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bullish trend (+1.64% return, 5/5 days up). Price is 7.76% above 50-day MA confirming uptrend. Hold current position to capture forecasted gains.",
+    "portfolio_value": 97771.3646343272
+  },
+  {
+    "step": 20,
+    "date": "2020-05-27",
+    "price": 3036.1298828125,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish trend (-1.94% return, 0/5 days up) with elevated volatility. Strong evidence to exit and lock in current +1.56% unrealized gains before forecasted decline.",
+    "portfolio_value": 101557.53036335832
+  },
+  {
+    "step": 21,
+    "date": "2020-06-03",
+    "price": 3122.8701171875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts strong bearish trend (4/5 days down, -2.6% return) despite recent 8.87% rally. Remain in cash to avoid losses during the forecasted pullback. Recent trade history confirms this defensive approach worked well on 2020-05-27.",
+    "portfolio_value": 101557.53036335832
+  },
+  {
+    "step": 22,
+    "date": "2020-06-10",
+    "price": 3190.139892578125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts -0.654% return with mixed signals (3 up/2 down days). Despite bullish trend, the negative expected return and recent +11.15% rally suggest consolidation. Remain in cash to avoid marginal downside risk and wait for stronger bullish confirmation.",
+    "portfolio_value": 101557.53036335832
+  },
+  {
+    "step": 23,
+    "date": "2020-06-17",
+    "price": 3113.489990234375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts -2.17% expected return despite bullish day-count trend\u2014conflicting signals warrant caution. Market has rallied +6.52% in 20 days and is 6.38% above 50-day MA, suggesting potential consolidation. Remain in cash to avoid downside risk and wait for stronger bullish confirmation.",
+    "portfolio_value": 101557.53036335832
+  },
+  {
+    "step": 24,
+    "date": "2020-06-24",
+    "price": 3050.330078125,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5-day bullish trend (+2.24% return, 5/5 days up) with low volatility. Price is 2.85% above 50-day MA confirming uptrend. Strong evidence to enter long position and capture forecasted gains.",
+    "portfolio_value": 101557.53036335832
+  },
+  {
+    "step": 25,
+    "date": "2020-07-01",
+    "price": 3115.860107421875,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts clear bearish trend (-1.57% return, 4/5 days down) after successful +2.15% rally from recent BUY. Lock in gains before forecasted pullback.",
+    "portfolio_value": 103739.28373744561
+  },
+  {
+    "step": 26,
+    "date": "2020-07-09",
+    "price": 3152.050048828125,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts +0.537% return with bullish trend (3/5 days up) and low volatility. Price above 50-day MA confirms uptrend. Enter long position to capture forecasted gains.",
+    "portfolio_value": 103739.28373744561
+  },
+  {
+    "step": 27,
+    "date": "2020-07-16",
+    "price": 3215.570068359375,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts strong bearish trend (4/5 days down, -1.099% return). Lock in substantial unrealized gains (+$5,829) before forecasted pullback. Clear evidence to exit.",
+    "portfolio_value": 105829.83472080018
+  },
+  {
+    "step": 28,
+    "date": "2020-07-23",
+    "price": 3235.659912109375,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts +2.21% return with unanimous 5/5 bullish days and low volatility. Price 4.75% above 50-day MA confirms uptrend. Strong evidence to enter long position and capture forecasted gains.",
+    "portfolio_value": 105829.8347208002
+  },
+  {
+    "step": 29,
+    "date": "2020-07-30",
+    "price": 3246.219970703125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bullish trend (+1.063% return, 5/5 days up) with low volatility. Price above 50-day MA confirms uptrend. Already invested with strong unrealized gains; hold to capture forecasted appreciation.",
+    "portfolio_value": 106175.22616674173
+  },
+  {
+    "step": 30,
+    "date": "2020-08-06",
+    "price": 3349.159912109375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bullish trend (4/5 days up, +0.286% return) with low volatility. Price 6% above 50-day MA confirms uptrend. Already invested with strong unrealized gains; hold to capture forecasted appreciation.",
+    "portfolio_value": 109542.11801604311
+  },
+  {
+    "step": 31,
+    "date": "2020-08-13",
+    "price": 3373.429931640625,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts strong bearish trend (4/5 days down) with predicted decline to $3,256. Lock in substantial unrealized gains (+$10,336) before forecasted pullback. Clear evidence to exit position.",
+    "portfolio_value": 110335.92584054601
+  },
+  {
+    "step": 32,
+    "date": "2020-08-20",
+    "price": 3385.510009765625,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts bullish trend (3/5 days up, +0.822% return) with prices reaching $3,426 by day 3. Price 5.49% above 50-day MA and strong 20-day momentum (+4.63%) confirm uptrend. Low volatility environment supports entry. Buy to capture forecasted appreciation.",
+    "portfolio_value": 110335.92584054603
+  },
+  {
+    "step": 33,
+    "date": "2020-08-27",
+    "price": 3484.550048828125,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous 5/5 bearish trend with -0.521% expected return and consistent daily declines to $3,436. Lock in substantial unrealized gains (+$13,564) before forecasted pullback. Clear evidence to exit position.",
+    "portfolio_value": 113563.70374512274
+  },
+  {
+    "step": 34,
+    "date": "2020-09-03",
+    "price": 3455.06005859375,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5-day bullish trend (+3.926% return, 5/5 days up) with low volatility. Price 5.21% above 50-day MA confirms uptrend. Strong positive signals warrant entry from cash position.",
+    "portfolio_value": 113563.70374512272
+  },
+  {
+    "step": 35,
+    "date": "2020-09-11",
+    "price": 3340.969970703125,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous 5/5 bearish trend with -0.877% expected return and consistent daily declines. Lock in $9,814 unrealized gains before forecasted pullback. Clear evidence to exit position.",
+    "portfolio_value": 109813.69861590961
+  },
+  {
+    "step": 36,
+    "date": "2020-09-18",
+    "price": 3319.469970703125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bearish trend (4/5 days down) with high volatility (2.234% spread). Price below 50-day MA and negative 20-day momentum confirm weakness. Stay in cash until clearer bullish signals emerge.",
+    "portfolio_value": 109813.69861590961
+  },
+  {
+    "step": 37,
+    "date": "2020-09-25",
+    "price": 3298.4599609375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bearish trend (4/5 days down, -1.96% return). Price below 50-day MA and negative 20-day momentum confirm weakness. Remain in cash until stronger bullish signals emerge.",
+    "portfolio_value": 109813.69861590961
+  },
+  {
+    "step": 38,
+    "date": "2020-10-02",
+    "price": 3348.419921875,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish trend with +1.269% expected return and low volatility. Strong multi-day agreement on upside direction warrants entry from cash position.",
+    "portfolio_value": 109813.69861590961
+  },
+  {
+    "step": 39,
+    "date": "2020-10-09",
+    "price": 3477.139892578125,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous 5/5 bearish trend with -0.894% expected return. All forecast closes decline from current $3,477, with 5-day target at 3406. Lock in $14k unrealized gain before forecasted pullback.",
+    "portfolio_value": 114035.15721382838
+  },
+  {
+    "step": 40,
+    "date": "2020-10-16",
+    "price": 3483.81005859375,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish trend with +0.434% expected return and low volatility. Price above 50-day MA with strong 20-day momentum confirms uptrend. Clear multi-day agreement warrants entry from cash position.",
+    "portfolio_value": 114035.1572138284
+  },
+  {
+    "step": 41,
+    "date": "2020-10-23",
+    "price": 3465.389892578125,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts bearish trend (3/5 days down) with sharp decline from 3504.6 to 3363.7 by day 5. High volatility (2.26% spread) and multi-day downtrend warrant locking in $13.4k unrealized gain before pullback.",
+    "portfolio_value": 113432.21202101713
+  },
+  {
+    "step": 42,
+    "date": "2020-10-30",
+    "price": 3269.9599609375,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish trend with +1.413% expected return. All forecast days trend upward with closes reaching $3,371.9 by day 3. Strong multi-day agreement warrants entry from cash despite elevated volatility and price below 50-day MA.",
+    "portfolio_value": 113432.21202101714
+  },
+  {
+    "step": 43,
+    "date": "2020-11-06",
+    "price": 3509.43994140625,
+    "action": "HOLD",
+    "reasoning": "Bearish trend (3/5 days down) with modest +0.73% expected return lacks conviction. Already holding strong unrealized gains (+$21.7k); no need to risk profitable position on weak signals.",
+    "portfolio_value": 121739.57487677888
+  },
+  {
+    "step": 44,
+    "date": "2020-11-13",
+    "price": 3585.14990234375,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts clear bearish trend (4/5 days down) with -1.03% expected return and 5-day close at 3535.3. Lock in $24.4k unrealized gain before forecasted pullback.",
+    "portfolio_value": 124365.89093072324
+  },
+  {
+    "step": 45,
+    "date": "2020-11-20",
+    "price": 3557.5400390625,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts 4/5 bullish days with price rising to 3612.8 mid-week. Price above 50-day MA with +2.66% 20-day momentum confirms uptrend. Normal volatility and multi-day agreement warrant entry from cash despite modest -0.23% expected return.",
+    "portfolio_value": 124365.89093072322
+  },
+  {
+    "step": 46,
+    "date": "2020-11-30",
+    "price": 3621.6298828125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish trend with +1.238% expected return and price rising to 3,683.6 by day 5. Strong 20-day momentum (+10.75%), price above 50-day MA, and low volatility confirm uptrend. Already holding profitable position; no need to churn.",
+    "portfolio_value": 126606.36902234297
+  },
+  {
+    "step": 47,
+    "date": "2020-12-07",
+    "price": 3691.9599609375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts 4/5 bullish days with price rising to $3,813.2 by day 5. Strong 20-day momentum (+5.2%), price above 50-day MA, and declining volatility confirm uptrend. Already holding profitable position (+$29k); no need to churn on strong bullish signal.",
+    "portfolio_value": 129064.99569392021
+  },
+  {
+    "step": 48,
+    "date": "2020-12-14",
+    "price": 3647.489990234375,
+    "action": "HOLD",
+    "reasoning": "Bearish 3/5 trend with -0.66% expected return, but 5-day close forecast (3,663.5) shows modest upside. Strong 20-day momentum (+1.74%) and price +3.68% above 50-day MA confirm uptrend structure intact. Hold profitable position (+$27.5k) rather than churn on weak bearish signal.",
+    "portfolio_value": 127510.39687973098
+  },
+  {
+    "step": 49,
+    "date": "2020-12-21",
+    "price": 3694.919921875,
+    "action": "HOLD",
+    "reasoning": "Bearish 3/5 trend with -0.379% expected return, but 5-day close recovers to $3,703. Strong 20-day momentum (+3.86%) and price 4.14% above 50-day MA confirm uptrend intact. Hold profitable position (+$29k) rather than churn on weak signal.",
+    "portfolio_value": 129168.47117840397
+  },
+  {
+    "step": 50,
+    "date": "2020-12-29",
+    "price": 3727.0400390625,
+    "action": "HOLD",
+    "reasoning": "Perfect 5/5 bullish forecast with +0.75% expected return. Price 4.45% above 50-day MA with positive momentum. Already holding profitable position (+$30k); maintain exposure to capture forecasted upside without churning.",
+    "portfolio_value": 130291.33893167185
+  },
+  {
+    "step": 51,
+    "date": "2021-01-06",
+    "price": 3748.139892578125,
+    "action": "HOLD",
+    "reasoning": "Bearish 3/5 trend with -0.083% expected return, but forecast close near current price. 20-day momentum +1.52% and price 4.22% above 50-day MA confirm uptrend intact. Hold profitable position (+$31k) rather than churn on weak signal.",
+    "portfolio_value": 131028.95595134424
+  },
+  {
+    "step": 52,
+    "date": "2021-01-13",
+    "price": 3809.840087890625,
+    "action": "HOLD",
+    "reasoning": "Bearish 3/5 forecast with -2.1% drawdown risk, but modest +0.528% expected return and strong uptrend structure (price 4.69% above 50-day MA, +4.45% 20-day momentum) remain intact. Hold profitable position (+$33k) rather than churn on weak signal.",
+    "portfolio_value": 133185.8957682917
+  },
+  {
+    "step": 53,
+    "date": "2021-01-21",
+    "price": 3853.070068359375,
+    "action": "HOLD",
+    "reasoning": "Bearish 4/5 forecast (-0.36% return) but uptrend structure intact: price 4.66% above 50-day MA with +4.28% 20-day momentum. Hold profitable position (+$34.7k) rather than churn on weak signal, consistent with successful prior decisions.",
+    "portfolio_value": 134697.14651371707
+  },
+  {
+    "step": 54,
+    "date": "2021-01-28",
+    "price": 3787.3798828125,
+    "action": "HOLD",
+    "reasoning": "Forecast shows -1.66% expected return with pullback day 1, but recovers to $3,839.60 by day 5 (3/5 bullish days). Uptrend structure intact: price 2.08% above 50-day MA with +1.62% 20-day momentum. Hold profitable position (+$32.4k) consistent with successful prior decisions on similar mixed signals.",
+    "portfolio_value": 132400.72304096972
+  },
+  {
+    "step": 55,
+    "date": "2021-02-04",
+    "price": 3871.739990234375,
+    "action": "HOLD",
+    "reasoning": "4/5 bullish forecast days with recovery to $3,891.70 by day 5 despite -0.702% expected return. Uptrend structure intact (price 3.82% above 50-day MA, +3.3% 20-day momentum). Maintain profitable position (+$35.3k) rather than churn on weak signal.",
+    "portfolio_value": 135349.81702257894
+  },
+  {
+    "step": 56,
+    "date": "2021-02-11",
+    "price": 3916.3798828125,
+    "action": "HOLD",
+    "reasoning": "3/5 bullish forecast days with recovery to $3,966.2 by day 5 despite -0.779% expected return. Uptrend structure intact (price 4.2% above 50-day MA, +2.8% 20-day momentum). Maintain profitable position (+$36.9k) consistent with successful prior decisions.",
+    "portfolio_value": 136910.35603284213
+  },
+  {
+    "step": 57,
+    "date": "2021-02-19",
+    "price": 3906.7099609375,
+    "action": "HOLD",
+    "reasoning": "Bearish 0/5 forecast (-0.787% return) but uptrend structure intact (price 3.22% above 50-day MA). Historical pattern shows this setup is profitable; maintain +$36.6k gain rather than churn.",
+    "portfolio_value": 136572.31108155276
+  },
+  {
+    "step": 58,
+    "date": "2021-02-26",
+    "price": 3811.14990234375,
+    "action": "HOLD",
+    "reasoning": "Perfect 5/5 bullish forecast (+0.608% return) in low-volatility regime with intact uptrend structure. Maintain profitable +$33k position; no churn warranted on positive signal.",
+    "portfolio_value": 133231.68477969512
+  },
+  {
+    "step": 59,
+    "date": "2021-03-05",
+    "price": 3841.93994140625,
+    "action": "SELL",
+    "reasoning": "Kronos shows perfect 0/5 bearish forecast (-3.477% return) with all days declining. Recent Feb 19 HOLD on similar bearish signal lost $3,340. Lock in +$34k gains before predicted drawdown.",
+    "portfolio_value": 134308.05513610822
+  },
+  {
+    "step": 60,
+    "date": "2021-03-12",
+    "price": 3943.340087890625,
+    "action": "BUY",
+    "reasoning": "Kronos shows bullish 3/5 forecast (+0.114% return) in low-volatility regime with price 2.79% above 50-day MA. Recent SELL avoided downside; now re-entry warranted as trend has reversed to positive with intact uptrend structure.",
+    "portfolio_value": 134308.05513610822
+  },
+  {
+    "step": 61,
+    "date": "2021-03-19",
+    "price": 3913.10009765625,
+    "action": "HOLD",
+    "reasoning": "Perfect 5/5 bullish forecast (+0.365% expected return) with all days trending upward. Price remains above 50-day MA in intact uptrend; low volatility regime supports maintaining profitable position.",
+    "portfolio_value": 133278.0972361579
+  },
+  {
+    "step": 62,
+    "date": "2021-03-26",
+    "price": 3974.5400390625,
+    "action": "SELL",
+    "reasoning": "Perfect 0/5 bearish forecast (-1.207% return) with all days declining. Lock in +$35k gains before predicted drawdown; historical pattern shows holding through similar signals has been costly.",
+    "portfolio_value": 135370.70879235872
+  },
+  {
+    "step": 63,
+    "date": "2021-04-05",
+    "price": 4077.909912109375,
+    "action": "HOLD",
+    "reasoning": "Bearish 5-day forecast (-1.206%, 0/5 days up) suggests caution, but price remains 4.89% above 50-day MA with strong 20-day momentum. Modest predicted drawdown and intact uptrend structure don't warrant re-entry into predicted weakness; maintain CASH position pending clearer reversal signal.",
+    "portfolio_value": 135370.70879235872
+  },
+  {
+    "step": 64,
+    "date": "2021-04-12",
+    "price": 4127.990234375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts perfect 0/5 bearish trend (-0.149% return) with all days declining. While uptrend structure remains intact (5.46% above 50-day MA), the consistent downside forecast warrants staying in CASH to avoid catching a falling knife. Re-entry opportunity likely after predicted weakness stabilizes.",
+    "portfolio_value": 135370.70879235872
+  },
+  {
+    "step": 65,
+    "date": "2021-04-19",
+    "price": 4163.259765625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts perfect 0/5 bearish trend (-0.065% return) with all days declining. Despite intact uptrend structure (5.39% above 50-day MA), the unanimous downside forecast warrants staying in CASH to avoid predicted weakness. Recent history confirms this defensive approach has protected gains.",
+    "portfolio_value": 135370.70879235872
+  },
+  {
+    "step": 66,
+    "date": "2021-04-26",
+    "price": 4187.6201171875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bearish 5-day trend (4/5 days down, -0.009% return) despite intact uptrend structure. Recent history confirms defensive CASH positioning has protected gains; wait for clearer reversal signal before re-entry.",
+    "portfolio_value": 135370.70879235872
+  },
+  {
+    "step": 67,
+    "date": "2021-05-03",
+    "price": 4192.66015625,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous bullish 5/5 days up (+0.752% return) \u2014 a reversal from weeks of bearish signals. Price 4.74% above 50-day MA with +2.81% 20-day momentum confirms intact uptrend. Deploy capital on this clear directional shift.",
+    "portfolio_value": 135370.70879235872
+  },
+  {
+    "step": 68,
+    "date": "2021-05-10",
+    "price": 4188.43017578125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts perfect 5/5 bullish days (+0.39% return) with consistent upside progression. Already invested with strong unrealized gains; uptrend structure intact (3.84% above 50-day MA). Hold to capture predicted continuation.",
+    "portfolio_value": 135234.1331022497
+  },
+  {
+    "step": 69,
+    "date": "2021-05-17",
+    "price": 4163.2900390625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts perfect 5/5 bullish days (+1.012% return) with declining volatility. Already invested with strong unrealized gains; uptrend structure intact (2.45% above 50-day MA). Hold to capture predicted continuation.",
+    "portfolio_value": 134422.4197746906
+  },
+  {
+    "step": 70,
+    "date": "2021-05-24",
+    "price": 4197.0498046875,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts decisive bearish reversal (4/5 days down, -0.579% return) after weeks of bullish signals. Lock in substantial unrealized gains (+$35.5K) before predicted weakness unfolds over next 3-4 trading days.",
+    "portfolio_value": 135512.43976939673
+  },
+  {
+    "step": 71,
+    "date": "2021-06-01",
+    "price": 4202.0400390625,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts perfect 5/5 bullish days (+0.433% return) with consistent upside progression. Price 2.11% above 50-day MA with positive 20-day momentum confirms intact uptrend. Deploy capital on this clear directional signal.",
+    "portfolio_value": 135512.43976939673
+  },
+  {
+    "step": 72,
+    "date": "2021-06-08",
+    "price": 4227.259765625,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts bearish reversal (3/5 days down) with elevated volatility (1.4% spread). Lock in substantial unrealized gains (+$36.3K) before predicted weakness unfolds. High-volatility regime warrants de-risking.",
+    "portfolio_value": 136325.75583612415
+  },
+  {
+    "step": 73,
+    "date": "2021-06-15",
+    "price": 4246.58984375,
+    "action": "HOLD",
+    "reasoning": "Elevated volatility (1.06% spread) and mixed forecast (3/5 days up, +0.254% return) don't justify re-entry from CASH. Uptrend intact but signal too weak in high-volatility regime. Wait for clearer directional confirmation.",
+    "portfolio_value": 136325.75583612415
+  },
+  {
+    "step": 74,
+    "date": "2021-06-22",
+    "price": 4246.43994140625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bearish reversal (4/5 days down, -1.288% return) with elevated volatility (1.129% spread). From CASH, avoid re-entry into predicted weakness. Wait for clearer bullish confirmation.",
+    "portfolio_value": 136325.75583612415
+  },
+  {
+    "step": 75,
+    "date": "2021-06-29",
+    "price": 4291.7998046875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts decisive bearish reversal (5/5 days down, -0.515% return). Despite positive 20-day momentum, the unanimous downside forecast warrants staying in CASH. Wait for bullish confirmation before re-entry.",
+    "portfolio_value": 136325.75583612415
+  },
+  {
+    "step": 76,
+    "date": "2021-07-07",
+    "price": 4358.1298828125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bearish reversal (5/5 days down, -1.086% return). Despite positive 20-day momentum, the decisive downside signal warrants staying in CASH. Wait for bullish confirmation before re-entry.",
+    "portfolio_value": 136325.75583612415
+  },
+  {
+    "step": 77,
+    "date": "2021-07-14",
+    "price": 4374.2998046875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bearish trend (3/5 days down, +0.055% return) with insufficient conviction to re-enter from CASH. Maintain defensive posture until clearer bullish confirmation emerges.",
+    "portfolio_value": 136325.75583612415
+  },
+  {
+    "step": 78,
+    "date": "2021-07-21",
+    "price": 4358.68994140625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bearish reversal (4/5 days down, -1.89% return). Despite positive 20-day momentum, the decisive downside signal warrants staying in CASH. Wait for bullish confirmation before re-entry.",
+    "portfolio_value": 136325.75583612415
+  },
+  {
+    "step": 79,
+    "date": "2021-07-28",
+    "price": 4400.64013671875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bearish reversal (5/5 days down, -0.23% return). Despite positive 20-day momentum, the decisive downside signal warrants staying in CASH. Wait for bullish confirmation before re-entry.",
+    "portfolio_value": 136325.75583612415
+  },
+  {
+    "step": 80,
+    "date": "2021-08-04",
+    "price": 4402.66015625,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts bullish trend (3/5 days up) with declining volatility and positive 20-day momentum. Price is 2.54% above 50-day MA. First constructive signal after weeks of bearish forecasts\u2014time to re-enter from CASH.",
+    "portfolio_value": 136325.75583612415
+  },
+  {
+    "step": 81,
+    "date": "2021-08-11",
+    "price": 4442.41015625,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous bearish reversal (5/5 days down, -0.571% return) after just one week of bullish positioning. Lock in +$1,231 unrealized gains before predicted decline. Clear reversal signal warrants exit.",
+    "portfolio_value": 137556.59096810527
+  },
+  {
+    "step": 82,
+    "date": "2021-08-18",
+    "price": 4400.27001953125,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts bullish trend (4/5 days up, +0.146% return) with normal volatility. Price is 1.36% above 50-day MA with positive 20-day momentum. Clear constructive signal to re-enter from CASH after successful prior exit.",
+    "portfolio_value": 137556.59096810527
+  },
+  {
+    "step": 83,
+    "date": "2021-08-25",
+    "price": 4496.18994140625,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous bearish reversal (5/5 days down, -0.721% return). Lock in substantial unrealized gains (+$40,555) before predicted decline. Same decisive signal that warranted successful exit on 8/11.",
+    "portfolio_value": 140555.13819372703
+  },
+  {
+    "step": 84,
+    "date": "2021-09-01",
+    "price": 4524.08984375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bearish reversal (5/5 days down, -0.306% return). Stay in CASH and wait for bullish confirmation, consistent with successful prior exits on 8/11 and 8/25.",
+    "portfolio_value": 140555.13819372703
+  },
+  {
+    "step": 85,
+    "date": "2021-09-09",
+    "price": 4493.27978515625,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous bullish trend (5/5 days up, +0.756% return) with normal volatility. Price is 1.73% above 50-day MA with positive 20-day momentum. Clear constructive signal to re-enter from CASH.",
+    "portfolio_value": 140555.13819372703
+  },
+  {
+    "step": 86,
+    "date": "2021-09-16",
+    "price": 4473.75,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts bearish reversal (4/5 days down, +0.487% return) mirroring successful prior exits. Lock in +$39,944 unrealized gains before predicted decline. Clear risk/reward favors profit-taking.",
+    "portfolio_value": 139944.2232757202
+  },
+  {
+    "step": 87,
+    "date": "2021-09-23",
+    "price": 4448.97998046875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bearish reversal (5/5 days down, -1.813% return). Stay in CASH and wait for bullish confirmation, consistent with successful prior exits on 8/25 and 9/16. Strong downside risk does not justify entry.",
+    "portfolio_value": 139944.2232757202
+  },
+  {
+    "step": 88,
+    "date": "2021-09-30",
+    "price": 4307.5400390625,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous bullish trend (5/5 days up, +0.589% return). Price is oversold 3% below 50-day MA with normal volatility\u2014ideal entry point ahead of predicted recovery.",
+    "portfolio_value": 139944.2232757202
+  },
+  {
+    "step": 89,
+    "date": "2021-10-07",
+    "price": 4399.759765625,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts bearish reversal (3/5 days down, -0.71% return). Price below 50-day MA confirms weakness. Lock in +$42,940 unrealized gains before predicted decline, consistent with successful prior exits.",
+    "portfolio_value": 142940.27621717984
+  },
+  {
+    "step": 90,
+    "date": "2021-10-14",
+    "price": 4438.259765625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bearish trend (5/5 days down, -1.812% return). All forecast closes below current price. Stay in CASH and wait for bullish confirmation before re-entering, consistent with successful prior exits.",
+    "portfolio_value": 142940.27621717984
+  },
+  {
+    "step": 91,
+    "date": "2021-10-21",
+    "price": 4549.77978515625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bearish reversal (5/5 days down, -1.089% return) despite recent bullish momentum. Stay in CASH and await bullish confirmation, consistent with successful prior exits on 9/16 and 10/7.",
+    "portfolio_value": 142940.27621717984
+  },
+  {
+    "step": 92,
+    "date": "2021-10-28",
+    "price": 4596.419921875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bearish reversal (3/5 days down, -0.163% return) with price declining to 4,536 by day 5. Despite strong 20-day momentum, the majority trend is down. Stay in CASH and await bullish confirmation, consistent with successful prior exits.",
+    "portfolio_value": 142940.27621717984
+  },
+  {
+    "step": 93,
+    "date": "2021-11-04",
+    "price": 4680.06005859375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bearish trend (5/5 days down, -0.807% return) with price declining to $4,544 by day 5. Despite strong 20-day momentum, the model's recent accuracy supports staying in CASH and awaiting bullish confirmation.",
+    "portfolio_value": 142940.27621717984
+  },
+  {
+    "step": 94,
+    "date": "2021-11-11",
+    "price": 4649.27001953125,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts strong bullish trend (4/5 days up, +0.469% return). Price is 3.62% above 50-day MA with +4.75% 20-day momentum. Clear bullish confirmation after extended CASH period justifies entry.",
+    "portfolio_value": 142940.27621717984
+  },
+  {
+    "step": 95,
+    "date": "2021-11-18",
+    "price": 4704.5400390625,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts strong bearish reversal (4/5 days down, -0.465% return) with price declining to $4,570 by day 5. Model has proven accurate recently. Exit position to lock in $44.6K gains and avoid predicted decline.",
+    "portfolio_value": 144639.53477285354
+  },
+  {
+    "step": 96,
+    "date": "2021-11-26",
+    "price": 4594.6201171875,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous bullish trend (5/5 days up, +1.137% return). Price above 50-day MA with strong model accuracy. Clear bullish confirmation justifies re-entry after recent exit.",
+    "portfolio_value": 144639.53477285354
+  },
+  {
+    "step": 97,
+    "date": "2021-12-03",
+    "price": 4538.43017578125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bullish trend (5/5 days up, +0.082% return) with price rising to $4,636 by day 5. Model accuracy is strong and volatility is low. Maintain current invested position to capture the forecasted upside.",
+    "portfolio_value": 142870.66449051804
+  },
+  {
+    "step": 98,
+    "date": "2021-12-10",
+    "price": 4712.02001953125,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous bearish trend (5/5 days down, -1.004% return). Model has proven accurate on recent bearish signals. Lock in substantial $48K gains before predicted decline.",
+    "portfolio_value": 148335.3065285766
+  },
+  {
+    "step": 99,
+    "date": "2021-12-17",
+    "price": 4620.64013671875,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous bullish trend (5/5 days up, +1.234% return) with price rising to $4,765.50. Low volatility and strong model accuracy support entry. Full capital available to deploy on clear bullish signal.",
+    "portfolio_value": 148335.3065285766
+  },
+  {
+    "step": 100,
+    "date": "2021-12-27",
+    "price": 4791.18994140625,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts bearish trend (3/5 days down, -1.98% return). Lock in $53.8K gains before predicted decline. Model has proven accurate on recent reversals.",
+    "portfolio_value": 153810.42616744863
+  },
+  {
+    "step": 101,
+    "date": "2022-01-03",
+    "price": 4796.56005859375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bearish trend (5/5 days down, -0.846% return). Model has proven accurate on recent signals. Maintain cash position and wait for bullish reversal before re-entering.",
+    "portfolio_value": 153810.42616744863
+  },
+  {
+    "step": 102,
+    "date": "2022-01-10",
+    "price": 4670.2900390625,
+    "action": "HOLD",
+    "reasoning": "Kronos shows bullish trend (4/5 days up) but negative expected return (-0.549%) creates mixed signals. Price below 50-day MA and recent 20-day weakness suggest waiting for clearer bullish conviction before deploying capital.",
+    "portfolio_value": 153810.42616744863
+  },
+  {
+    "step": 103,
+    "date": "2022-01-18",
+    "price": 4577.10986328125,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous bullish trend (5/5 days up, +3.005% return). Strong model accuracy on recent signals supports entry. Deploy full capital on clear bullish conviction in low-volatility regime.",
+    "portfolio_value": 153810.42616744863
+  },
+  {
+    "step": 104,
+    "date": "2022-01-25",
+    "price": 4356.4501953125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bullish trend (5/5 days up, +2.161% return) supporting position maintenance. However, elevated volatility (2.612% spread) and price 6.53% below 50-day MA suggest caution against adding exposure. Maintain current invested position to capture upside while managing risk in volatile regime.",
+    "portfolio_value": 146395.3195648052
+  },
+  {
+    "step": 105,
+    "date": "2022-02-01",
+    "price": 4546.5400390625,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts bearish trend (3/5 days down) with prices declining to $4,449.6. Market is 1.85% below 50-day MA with -5.21% recent weakness. Exit position to avoid predicted decline and preserve gains.",
+    "portfolio_value": 152783.14960398438
+  },
+  {
+    "step": 106,
+    "date": "2022-02-08",
+    "price": 4521.5400390625,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts bullish trend (3/5 days up, +0.258% return) with normal volatility. Market has stabilized after recent selloff and shows early recovery signals. Deploy capital to capture upside as forecast suggests modest but consistent gains over next 5 days.",
+    "portfolio_value": 152783.14960398438
+  },
+  {
+    "step": 107,
+    "date": "2022-02-15",
+    "price": 4471.06982421875,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts bearish trend (3/5 days down, -2.074% return) with elevated volatility (4.4% spread). Price is 2.91% below 50-day MA and recent 20-day weakness confirms downtrend. Exit to protect substantial unrealized gains ($51K+) before predicted decline materializes.",
+    "portfolio_value": 151077.75756534244
+  },
+  {
+    "step": 108,
+    "date": "2022-02-23",
+    "price": 4225.5,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous bullish trend (5/5 days up, +3.29% return) with normal volatility. Market has stabilized after recent weakness; strong model conviction supports entry from cash position to capture predicted upside.",
+    "portfolio_value": 151077.75756534244
+  },
+  {
+    "step": 109,
+    "date": "2022-03-02",
+    "price": 4386.5400390625,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts strong bearish trend (4/5 days down, -2.95% return) confirmed by price 3.48% below 50-day MA and -3.52% recent weakness. Exit position to protect $56K+ unrealized gains before predicted decline materializes.",
+    "portfolio_value": 156835.55379769308
+  },
+  {
+    "step": 110,
+    "date": "2022-03-09",
+    "price": 4277.8798828125,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts strong bullish trend (4/5 days up, +0.443% return). Despite elevated volatility and price below 50-day MA, the multi-day bullish consensus supports re-entry from cash to capture predicted upside momentum.",
+    "portfolio_value": 156835.55379769308
+  },
+  {
+    "step": 111,
+    "date": "2022-03-16",
+    "price": 4357.85986328125,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous bearish trend (5/5 days down, -4.4% return) with high volatility and potential 11.6% drawdown. Price below 50-day MA confirms downtrend. Exit to protect $59.8K unrealized gains before predicted decline.",
+    "portfolio_value": 159767.7783746249
+  },
+  {
+    "step": 112,
+    "date": "2022-03-23",
+    "price": 4456.240234375,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous bullish trend (5/5 days up, +0.652% return) with normal volatility. Price above 50-day MA and positive 20-day momentum confirm uptrend. Strong model conviction supports entry from cash to capture predicted upside.",
+    "portfolio_value": 159767.7783746249
+  },
+  {
+    "step": 113,
+    "date": "2022-03-30",
+    "price": 4602.4501953125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bullish trend (3/5 days up, +1.565% return) with moderate volatility. Price above 50-day MA and strong recent momentum confirm uptrend. Already invested with $65K unrealized gains; hold to capture predicted near-term upside.",
+    "portfolio_value": 165009.78495565054
+  },
+  {
+    "step": 114,
+    "date": "2022-04-06",
+    "price": 4481.14990234375,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts bearish trend (3/5 days down) with price declining to 4,423.5 by day 4. Lock in $60K+ unrealized gains before predicted downside materializes. Multi-day bearish consensus outweighs modest positive expected return.",
+    "portfolio_value": 160660.85462323404
+  },
+  {
+    "step": 115,
+    "date": "2022-04-13",
+    "price": 4446.58984375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bearish trend (5/5 days down, -2.04% return) with elevated volatility. High-volatility regime + strong downside consensus warrants staying in cash. Wait for bullish reversal before re-entry.",
+    "portfolio_value": 160660.85462323404
+  },
+  {
+    "step": 116,
+    "date": "2022-04-21",
+    "price": 4393.66015625,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous bullish trend (5/5 days up, +1.338% return) with low volatility. Strong model conviction and reversal from prior bearish outlook support entry from cash. Capture predicted upside with favorable risk profile.",
+    "portfolio_value": 160660.85462323404
+  },
+  {
+    "step": 117,
+    "date": "2022-04-28",
+    "price": 4287.5,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous bearish trend (5/5 days down, -1.113% return). Price below 50-day MA with negative 20-day momentum confirms downtrend. Exit position to protect gains before further deterioration.",
+    "portfolio_value": 156778.9473241911
+  },
+  {
+    "step": 118,
+    "date": "2022-05-05",
+    "price": 4146.8701171875,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous bullish trend (5/5 days up, +3.39% return) with normal volatility. Price oversold at -5.21% below 50-day MA suggests reversal opportunity. Strong model conviction supports entry from cash.",
+    "portfolio_value": 156778.9473241911
+  },
+  {
+    "step": 119,
+    "date": "2022-05-12",
+    "price": 3930.080078125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bullish 4-of-5 day trend toward 4,087, but near-flat expected return and price 9.6% below 50-day MA warrant caution. Hold current position to capture predicted upside while protecting substantial unrealized gains.",
+    "portfolio_value": 148582.85891194045
+  },
+  {
+    "step": 120,
+    "date": "2022-05-19",
+    "price": 3900.7900390625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bullish 5/5 day trend with +0.715% expected return and declining volatility. Already fully invested with strong unrealized gains; holding captures predicted upside while protecting position during early-stage recovery from oversold levels.",
+    "portfolio_value": 147475.5029153611
+  },
+  {
+    "step": 121,
+    "date": "2022-05-26",
+    "price": 4057.840087890625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bullish 4/5 day trend but negative -1.91% expected return with near-term dip to $3,980. Already fully invested with $53k unrealized gains; holding protects position while capturing predicted recovery without chasing oversold conditions.",
+    "portfolio_value": 153413.0270327515
+  },
+  {
+    "step": 122,
+    "date": "2022-06-03",
+    "price": 4108.5400390625,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts bearish 3/5 day trend with declining closes toward $4,073. Price is 3.47% below 50-day MA confirming weakness. Protect $55k unrealized gains before further deterioration in downtrend environment.",
+    "portfolio_value": 155329.81843192497
+  },
+  {
+    "step": 123,
+    "date": "2022-06-10",
+    "price": 3900.860107421875,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous bullish 5/5 day trend with +2.98% expected return. Price is oversold at 7.39% below 50-day MA, signaling reversal opportunity. Normal volatility supports entry from cash position.",
+    "portfolio_value": 155329.81843192497
+  },
+  {
+    "step": 124,
+    "date": "2022-06-17",
+    "price": 3674.840087890625,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous bearish 5/5 day trend with -3.23% expected return and elevated volatility. Price 11% below 50-day MA confirms downtrend. Protect $46k unrealized gains before further deterioration.",
+    "portfolio_value": 146329.84211158153
+  },
+  {
+    "step": 125,
+    "date": "2022-06-27",
+    "price": 3900.110107421875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bearish 3/5 day trend with -2.085% expected return. Price is 4% below 50-day MA confirming downtrend. Insufficient bullish evidence to justify entry from cash; waiting for clearer reversal signals.",
+    "portfolio_value": 146329.84211158153
+  },
+  {
+    "step": 126,
+    "date": "2022-07-05",
+    "price": 3831.389892578125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bearish 5/5 day trend with -1.23% expected return. Price is 4.35% below 50-day MA confirming downtrend. Insufficient bullish evidence to justify entry from cash position.",
+    "portfolio_value": 146329.84211158153
+  },
+  {
+    "step": 127,
+    "date": "2022-07-12",
+    "price": 3818.800048828125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bearish 5/5 day trend with all closes declining. Price is 3.71% below 50-day MA confirming downtrend. Insufficient bullish evidence to justify entry from cash position.",
+    "portfolio_value": 146329.84211158153
+  },
+  {
+    "step": 128,
+    "date": "2022-07-19",
+    "price": 3936.68994140625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bearish 5/5 day trend with -2.91% expected return. Despite recent 7.13% 20-day rally, the consistent downside forecast across all days provides strong evidence to avoid entry. Remain in cash.",
+    "portfolio_value": 146329.84211158153
+  },
+  {
+    "step": 129,
+    "date": "2022-07-26",
+    "price": 3921.050048828125,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous bullish 5/5 day trend with +0.486% expected return, reversing 5 consecutive bearish forecasts. Low volatility environment and price above 50-day MA confirm uptrend initiation. Entry justified after extended downtrend.",
+    "portfolio_value": 146329.84211158153
+  },
+  {
+    "step": 130,
+    "date": "2022-08-02",
+    "price": 4091.18994140625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish days with +0.629% expected return. Already invested with strong gains; price above 50-day MA and positive momentum confirm uptrend. Hold to capture continued upside.",
+    "portfolio_value": 152679.30037092694
+  },
+  {
+    "step": 131,
+    "date": "2022-08-09",
+    "price": 4122.47021484375,
+    "action": "HOLD",
+    "reasoning": "Bearish 3/5 day trend with -0.129% expected return, but forecast shows recovery to $4,175 by day 5. Already invested with strong gains; price above 50-day MA. Hold through near-term weakness to capture potential recovery.",
+    "portfolio_value": 153846.65029411513
+  },
+  {
+    "step": 132,
+    "date": "2022-08-16",
+    "price": 4305.2001953125,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous 5/5 bearish days with -1.42% expected return and all closes declining. Strong evidence to lock in $60K+ gains before predicted pullback to $4,198.",
+    "portfolio_value": 160665.9586064474
+  },
+  {
+    "step": 133,
+    "date": "2022-08-23",
+    "price": 4128.72998046875,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts bullish 3/5 day trend with recovery to $4,262.5 by day 5 (+3.2% upside). Price above 50-day MA with positive momentum. Near-term dip presents entry opportunity before predicted recovery.",
+    "portfolio_value": 160665.9586064474
+  },
+  {
+    "step": 134,
+    "date": "2022-08-30",
+    "price": 3986.159912109375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish days with +0.733% expected return and prices rising to $4,217. Already invested with strong gains; forecast supports continued upside. Hold to capture predicted recovery.",
+    "portfolio_value": 155117.96762377114
+  },
+  {
+    "step": 135,
+    "date": "2022-09-07",
+    "price": 3979.8701171875,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous 5/5 bearish days with -1.41% expected return and prices declining to $3,841. Price below 50-day MA with negative 20-day trend and elevated volatility confirm downtrend. Lock in $54K+ gains before predicted further decline.",
+    "portfolio_value": 154873.20569084227
+  },
+  {
+    "step": 136,
+    "date": "2022-09-14",
+    "price": 3946.010009765625,
+    "action": "HOLD",
+    "reasoning": "Bearish 4/5 day forecast with prices declining to $3,840 (-2.7%). Price below 50-day MA and 20-day return of -8.34% confirm downtrend. Minimal expected return (+0.411%) doesn't justify entry risk. Stay in cash and wait for stabilization or stronger bullish signals.",
+    "portfolio_value": 154873.20569084227
+  },
+  {
+    "step": 137,
+    "date": "2022-09-21",
+    "price": 3789.929931640625,
+    "action": "HOLD",
+    "reasoning": "Bearish 4/5 day forecast with prices declining to $3,668. Price 6.23% below 50-day MA and 20-day return of -8.21% confirm downtrend. Minimal +0.458% expected return doesn't justify entry risk. Stay in cash.",
+    "portfolio_value": 154873.20569084227
+  },
+  {
+    "step": 138,
+    "date": "2022-09-28",
+    "price": 3719.0400390625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5/5 bearish days with -0.94% expected return. Price 7.73% below 50-day MA with -6.7% 20-day decline confirms downtrend. Stay in cash until stronger bullish reversal signals emerge.",
+    "portfolio_value": 154873.20569084227
+  },
+  {
+    "step": 139,
+    "date": "2022-10-05",
+    "price": 3783.280029296875,
+    "action": "HOLD",
+    "reasoning": "Bearish 4/5 day forecast with prices declining to $3,676. Price 5.48% below 50-day MA, elevated volatility (3.08%), and -4.94% 20-day return confirm downtrend. Modest +1.27% expected return insufficient to justify entry risk. Stay in cash.",
+    "portfolio_value": 154873.20569084227
+  },
+  {
+    "step": 140,
+    "date": "2022-10-12",
+    "price": 3577.030029296875,
+    "action": "HOLD",
+    "reasoning": "Bearish 3/5 day forecast with -0.602% expected return. Price 9.77% below 50-day MA and -9.35% 20-day decline confirm downtrend. Insufficient bullish evidence to justify entry; remain in cash.",
+    "portfolio_value": 154873.20569084227
+  },
+  {
+    "step": 141,
+    "date": "2022-10-19",
+    "price": 3695.159912109375,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts strong bullish consensus (4/5 days up) with +1.457% expected return and low volatility. After weeks of correct cash positioning, the forecast signals an early reversal. Enter position to capture the anticipated upside move.",
+    "portfolio_value": 154873.20569084227
+  },
+  {
+    "step": 142,
+    "date": "2022-10-26",
+    "price": 3830.60009765625,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts strong bearish consensus (4/5 days down) with prices declining to $3,673.90. Exit the profitable position to lock in $60K+ gains before the anticipated 4-day downtrend materializes.",
+    "portfolio_value": 160549.83571875162
+  },
+  {
+    "step": 143,
+    "date": "2022-11-02",
+    "price": 3759.68994140625,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish days with +2.47% expected return and low volatility. Strong consensus for upside momentum with final day target of $4,035.50. Market stabilizing after October decline; favorable entry point.",
+    "portfolio_value": 160549.83571875162
+  },
+  {
+    "step": 144,
+    "date": "2022-11-09",
+    "price": 3748.570068359375,
+    "action": "HOLD",
+    "reasoning": "Strong bullish forecast (4/5 days up, +1.83% expected return) with low volatility supports maintaining position. Already invested with $60K+ unrealized gains; positive 20-day momentum confirms uptrend. No churn needed.",
+    "portfolio_value": 160074.98438294668
+  },
+  {
+    "step": 145,
+    "date": "2022-11-16",
+    "price": 3958.7900390625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish days with +1.207% expected return and low volatility. Already invested with strong $69K unrealized gains; price above 50-day MA confirms uptrend. Maintain position to capture forecasted upside.",
+    "portfolio_value": 169051.99639382638
+  },
+  {
+    "step": 146,
+    "date": "2022-11-23",
+    "price": 4027.260009765625,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts strong bearish consensus (4/5 days down) with -1.73% expected return and significant drawdown to $3,851. Lock in substantial unrealized gains (+$71,976) before the anticipated decline.",
+    "portfolio_value": 171975.8658403432
+  },
+  {
+    "step": 147,
+    "date": "2022-12-01",
+    "price": 4076.570068359375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts strong bearish consensus (4/5 days down, -0.87% return) with pullback to $3,959. Maintain cash position to avoid the anticipated decline and preserve capital for better re-entry opportunities.",
+    "portfolio_value": 171975.8658403432
+  },
+  {
+    "step": 148,
+    "date": "2022-12-08",
+    "price": 3963.510009765625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish consensus (-1.316% return, 0/5 days up) with pullback to $3,871. Maintain cash position to avoid the anticipated decline and preserve capital for better re-entry after the forecasted correction.",
+    "portfolio_value": 171975.8658403432
+  },
+  {
+    "step": 149,
+    "date": "2022-12-15",
+    "price": 3895.75,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts strong bearish consensus (4/5 days down) with price declining to $3,809.60 (\u22122.2%). Negative 20-day momentum confirms weakness. Maintain cash position to preserve capital and avoid the anticipated correction.",
+    "portfolio_value": 171975.8658403432
+  },
+  {
+    "step": 150,
+    "date": "2022-12-22",
+    "price": 3822.389892578125,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts strong bullish consensus (4/5 days up, +1.26% return) with price recovery to $3,877.90. Market is oversold vs. 50-day MA; re-entry justified after successfully avoiding recent decline.",
+    "portfolio_value": 171975.8658403432
+  },
+  {
+    "step": 151,
+    "date": "2022-12-30",
+    "price": 3839.5,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bullish 4/5 day consensus with recovery toward $3,933. Already invested from Dec 22 re-entry; holding preserves position while market recovers toward 50-day MA.",
+    "portfolio_value": 172745.67886862994
+  },
+  {
+    "step": 152,
+    "date": "2023-01-09",
+    "price": 3892.090087890625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bullish consensus (5/5 days up, +0.32% return) with price recovery toward $4,036. Already invested from Dec 22 re-entry; holding preserves position while low-volatility uptrend develops.",
+    "portfolio_value": 175111.7969658892
+  },
+  {
+    "step": 153,
+    "date": "2023-01-17",
+    "price": 3990.969970703125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts modest 4/5 day bearish consensus (-0.768%) with pullback mid-week, but day-5 recovery to $4,001. Already invested with strong gains; holding preserves position through near-term weakness while maintaining exposure to potential recovery.",
+    "portfolio_value": 179560.5721925843
+  },
+  {
+    "step": 154,
+    "date": "2023-01-24",
+    "price": 4016.949951171875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bullish 5-day consensus (+1.405% return, 3/5 days up) with recovery trajectory. Already invested with strong gains; holding preserves position through normal pullback while maintaining exposure to forecast upside.",
+    "portfolio_value": 180729.45599596182
+  },
+  {
+    "step": 155,
+    "date": "2023-01-31",
+    "price": 4076.60009765625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts 4/5 bearish days with near-term pullback, but day-5 recovery to $4,100.80 and strong market structure (price +3.37% above 50-day MA) suggest temporary weakness. Holding preserves substantial gains while maintaining exposure to forecast recovery.",
+    "portfolio_value": 183413.21821735956
+  },
+  {
+    "step": 156,
+    "date": "2023-02-07",
+    "price": 4164.0,
+    "action": "HOLD",
+    "reasoning": "Unanimous bearish 5-day forecast (-2%) but market structure remains strong (5.16% above 50-day MA, +6.99% 20-day return). Forecast shows recovery on days 3 and 5; recent history confirms similar patterns led to gains. Holding preserves substantial unrealized gains through temporary weakness.",
+    "portfolio_value": 187345.48946711162
+  },
+  {
+    "step": 157,
+    "date": "2023-02-14",
+    "price": 4136.1298828125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish consensus (+1.305% return) with low volatility. Market structure remains strong (4.18% above 50-day MA). Already invested with substantial gains; holding preserves position through favorable forecast period.",
+    "portfolio_value": 186091.56517652614
+  },
+  {
+    "step": 158,
+    "date": "2023-02-22",
+    "price": 3991.050048828125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bullish 4/5 day consensus (+0.892% return) with low volatility. Market structure remains healthy (price above 50-day MA). Already invested with strong gains; holding preserves position through favorable forecast period.",
+    "portfolio_value": 179564.17504453525
+  },
+  {
+    "step": 159,
+    "date": "2023-03-01",
+    "price": 3951.389892578125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts strong 4/5 bullish consensus with recovery to $4,055 by day 5. Near-term dip to $3,922 is temporary; low volatility and healthy market structure support holding through the forecast period. Already invested with substantial gains; preserving position maximizes exposure to predicted upside.",
+    "portfolio_value": 177779.79671000154
+  },
+  {
+    "step": 160,
+    "date": "2023-03-08",
+    "price": 3992.010009765625,
+    "action": "SELL",
+    "reasoning": "Unanimous 5/5 bearish forecast with -2.6% downside to $3,888. Price broke below 50-day MA with negative 20-day momentum (-4.13%). Recent similar forecasts resulted in losses; locking in $79,607 gains is prudent.",
+    "portfolio_value": 179607.36533072768
+  },
+  {
+    "step": 161,
+    "date": "2023-03-15",
+    "price": 3891.929931640625,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish consensus with +2.517% expected return. Despite elevated volatility, the consistent upside across all 5 days and recovery pattern (dip on day 3, then recovery) supports entry. Price is 2.76% below 50-day MA, providing attractive entry point. Recent successful sell at $3,992 followed by current price of $3,891.93 presents good risk/reward for re-entry.",
+    "portfolio_value": 179607.36533072768
+  },
+  {
+    "step": 162,
+    "date": "2023-03-22",
+    "price": 3936.969970703125,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts bearish 3/5 day consensus with prices declining to $3,874 (-1.6%). Negative 20-day momentum and price below 50-day MA confirm weakness. Locking in $81,686 gains before predicted decline.",
+    "portfolio_value": 181685.90294381327
+  },
+  {
+    "step": 163,
+    "date": "2023-03-29",
+    "price": 4027.81005859375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5/5 bearish consensus with -0.93% expected return and prices declining to $3,910.90. Remaining in cash avoids the predicted downside; will re-enter on bullish reversal signal.",
+    "portfolio_value": 181685.90294381327
+  },
+  {
+    "step": 164,
+    "date": "2023-04-05",
+    "price": 4090.3798828125,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish consensus with +1.573% expected return. Price is above 50-day MA with positive momentum and low volatility. Strong entry signal from cash with favorable risk/reward profile.",
+    "portfolio_value": 181685.90294381327
+  },
+  {
+    "step": 165,
+    "date": "2023-04-13",
+    "price": 4146.22021484375,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous 5/5 bearish consensus with all days declining to $4,114.2 (-0.107% return). Strong directional signal to exit and lock in $84K+ gains before predicted downside.",
+    "portfolio_value": 184166.210748086
+  },
+  {
+    "step": 166,
+    "date": "2023-04-20",
+    "price": 4129.7900390625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous bearish 5/5 consensus with -0.17% expected return. However, from cash position with positive 20-day momentum and price above 50-day MA, the risk/reward doesn't justify entry. Waiting for stronger directional signal or reversal before deploying capital.",
+    "portfolio_value": 184166.210748086
+  },
+  {
+    "step": 167,
+    "date": "2023-04-27",
+    "price": 4135.35009765625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts strong bearish consensus (-2.52%, 5/5 down days) with elevated volatility. However, positive 20-day momentum and price above 50-day MA suggest caution on shorts. From cash, waiting for clearer reversal signal before deploying capital.",
+    "portfolio_value": 184166.210748086
+  },
+  {
+    "step": 168,
+    "date": "2023-05-04",
+    "price": 4061.219970703125,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish consensus with +0.789% expected return. Price above 50-day MA with normal volatility. Strong entry signal from cash position with favorable multi-day uptrend confirmation.",
+    "portfolio_value": 184166.210748086
+  },
+  {
+    "step": 169,
+    "date": "2023-05-11",
+    "price": 4130.6201171875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish consensus with +0.762% expected return. Already invested with strong gains; price above 50-day MA confirms uptrend. Hold to capture forecasted upside without unnecessary churn.",
+    "portfolio_value": 187313.33454231295
+  },
+  {
+    "step": 170,
+    "date": "2023-05-18",
+    "price": 4198.0498046875,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous 5/5 bearish consensus with -1.246% expected return over 5 days. All forecast days show declining prices. Lock in $90K+ unrealized gains before predicted downside, despite positive 20-day momentum.",
+    "portfolio_value": 190371.10292924734
+  },
+  {
+    "step": 171,
+    "date": "2023-05-25",
+    "price": 4151.27978515625,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish consensus with +1.44% expected return. Price above 50-day MA with positive momentum and low volatility. Strong entry signal to deploy capital from cash position.",
+    "portfolio_value": 190371.10292924734
+  },
+  {
+    "step": 172,
+    "date": "2023-06-02",
+    "price": 4282.3701171875,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous 5/5 bearish consensus with -1.473% expected return. All forecast days show declining prices from 4219 to 4171. Lock in $96K+ unrealized gains before predicted downside, consistent with successful prior exit on 2023-05-18.",
+    "portfolio_value": 196382.69751783297
+  },
+  {
+    "step": 173,
+    "date": "2023-06-09",
+    "price": 4298.85986328125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bearish 5-day consensus (-0.516% return) with 4 down days. Recent profitable exit on June 2 was well-timed; waiting for clearer bullish signals before re-entering.",
+    "portfolio_value": 196382.69751783297
+  },
+  {
+    "step": 174,
+    "date": "2023-06-16",
+    "price": 4409.58984375,
+    "action": "HOLD",
+    "reasoning": "Bearish forecast (4 down days) but weak signal with +0.04% expected return. Market structure remains constructive (price above 50-day MA, +5% 20-day return). Wait for clearer bullish consensus or decisive breakdown before re-entering from cash.",
+    "portfolio_value": 196382.69751783297
+  },
+  {
+    "step": 175,
+    "date": "2023-06-26",
+    "price": 4328.81982421875,
+    "action": "HOLD",
+    "reasoning": "Bearish 5-day consensus (-0.493%, all 5 days down) but modest downside. Market structure constructive (above 50-day MA, +4.28% 20-day return). Already in cash from well-timed June 2 exit; insufficient risk/reward to deploy capital into predicted -0.5% move. Wait for clearer bullish signal.",
+    "portfolio_value": 196382.69751783297
+  },
+  {
+    "step": 176,
+    "date": "2023-07-03",
+    "price": 4455.58984375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish consensus (all 5 days down, -0.153% return). While market structure remains constructive above 50-day MA, the near-term downside doesn't justify deploying capital from cash. Wait for bullish reversal signal.",
+    "portfolio_value": 196382.69751783297
+  },
+  {
+    "step": 177,
+    "date": "2023-07-11",
+    "price": 4439.259765625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish consensus (all 5 days down, -0.007% return). Despite constructive market structure above 50-day MA, the lack of any bullish days and negative expected return don't justify deploying capital from cash. Wait for bullish reversal signal.",
+    "portfolio_value": 196382.69751783297
+  },
+  {
+    "step": 178,
+    "date": "2023-07-18",
+    "price": 4554.97998046875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish consensus (all 5 days down, -1.326% return). Already in cash from well-timed prior exit; no justification to deploy capital into predicted weakness. Wait for bullish reversal signal.",
+    "portfolio_value": 196382.69751783297
+  },
+  {
+    "step": 179,
+    "date": "2023-07-25",
+    "price": 4567.4599609375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish consensus (all 5 days down, -0.228% return). Market structure remains constructive above 50-day MA, but lack of any bullish days doesn't justify deploying capital from cash. Wait for bullish reversal signal.",
+    "portfolio_value": 196382.69751783297
+  },
+  {
+    "step": 180,
+    "date": "2023-08-01",
+    "price": 4576.72998046875,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5-day bullish consensus (all 5 days up, +0.683% expected return) - a clear reversal from recent bearish signals. Market structure is constructive (4.49% above 50-day MA, +2.72% 20-day return). Deploy capital from cash position to capture this bullish setup.",
+    "portfolio_value": 196382.69751783297
+  },
+  {
+    "step": 181,
+    "date": "2023-08-08",
+    "price": 4499.3798828125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bullish consensus (all 5 days up, +1.379% expected return). Already invested from successful BUY on Aug 1st; market structure remains constructive above 50-day MA with low volatility. Hold position to capture the forecasted upside.",
+    "portfolio_value": 193063.68571337286
+  },
+  {
+    "step": 182,
+    "date": "2023-08-15",
+    "price": 4437.85986328125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bullish consensus (all 5 days up, +2.182% expected return). Already invested from successful Aug 1st entry; market structure remains constructive with low volatility. Hold to capture forecasted upside.",
+    "portfolio_value": 190423.92600754483
+  },
+  {
+    "step": 183,
+    "date": "2023-08-22",
+    "price": 4387.5498046875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bullish consensus (all 5 days up, +0.625% expected return) with low volatility. Already fully invested; hold to capture forecasted recovery as market rebounds from below 50-day MA.",
+    "portfolio_value": 188265.17400314778
+  },
+  {
+    "step": 184,
+    "date": "2023-08-29",
+    "price": 4497.6298828125,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish consensus (all 5 days down, -1.137% expected return) \u2014 strongest negative signal in recent history. Combined with 20-day downtrend and model's recent failed bullish calls, exit to protect $92,988 in unrealized gains.",
+    "portfolio_value": 192988.59504336986
+  },
+  {
+    "step": 185,
+    "date": "2023-09-06",
+    "price": 4465.47998046875,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5-day bullish consensus (all 5 days up, +1.352% expected return) with low volatility. Market is slightly below 50-day MA but forecast suggests recovery. Deploy capital from cash to capture the forecasted upside.",
+    "portfolio_value": 192988.59504336986
+  },
+  {
+    "step": 186,
+    "date": "2023-09-13",
+    "price": 4467.43994140625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bullish consensus (all 5 days up, +0.312% expected return) with low volatility. Already invested from successful Sep 6 entry; hold to capture forecasted upside.",
+    "portfolio_value": 193073.30040747908
+  },
+  {
+    "step": 187,
+    "date": "2023-09-20",
+    "price": 4402.2001953125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bullish 5-day consensus (+0.718% expected return, 3 up days). Already invested with strong unrealized gains; hold to capture forecasted recovery as model shows price reaching 4,456.4 by day 5.",
+    "portfolio_value": 190253.77663966737
+  },
+  {
+    "step": 188,
+    "date": "2023-09-27",
+    "price": 4274.509765625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bullish consensus (all 5 days up, +0.914% expected return) with low volatility. Already fully invested with strong unrealized gains; hold to capture forecasted recovery toward $4,421.5.",
+    "portfolio_value": 184735.26648316497
+  },
+  {
+    "step": 189,
+    "date": "2023-10-04",
+    "price": 4263.75,
+    "action": "HOLD",
+    "reasoning": "Mixed forecast signal: bullish trend (3 up days) but negative expected return (-0.631%) with elevated volatility. Already fully invested with $84K unrealized gains; market is 4% below 50-day MA. Hold to preserve position while avoiding churn in uncertain environment.",
+    "portfolio_value": 184270.25218234022
+  },
+  {
+    "step": 190,
+    "date": "2023-10-11",
+    "price": 4376.9501953125,
+    "action": "SELL",
+    "reasoning": "Unanimous 5-day bearish consensus (all down, -0.269% return) with elevated volatility. Price below 50-day MA and recent trend negative. Lock in $89K unrealized gains before forecasted decline.",
+    "portfolio_value": 189162.52507294697
+  },
+  {
+    "step": 191,
+    "date": "2023-10-18",
+    "price": 4314.60009765625,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5-day bullish consensus (all 5 days up, +0.703% expected return) with normal volatility. Strong multi-day agreement on upside direction justifies re-entry after recent cash position. Price near recent lows provides favorable entry.",
+    "portfolio_value": 189162.52507294697
+  },
+  {
+    "step": 192,
+    "date": "2023-10-25",
+    "price": 4186.77001953125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bullish consensus (all 5 days up, +2.391% expected return) with low volatility. Already invested with strong unrealized gains; hold to capture forecasted recovery toward $4,307 as model shows consistent upside across all forecast days.",
+    "portfolio_value": 183558.14464113538
+  },
+  {
+    "step": 193,
+    "date": "2023-11-01",
+    "price": 4237.85986328125,
+    "action": "HOLD",
+    "reasoning": "Negative expected return (-1.33%) with mixed forecast signals and price below 50-day MA warrant caution. Already fully invested with strong unrealized gains; hold to avoid churn while awaiting clearer bullish confirmation.",
+    "portfolio_value": 185798.0472116151
+  },
+  {
+    "step": 194,
+    "date": "2023-11-08",
+    "price": 4382.77978515625,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts clear bearish consensus (3 down days, -0.633% expected return) with price oscillating lower. Lock in $92K unrealized gains before forecasted decline. Price remains above 50-day MA but forecast momentum is negative.",
+    "portfolio_value": 192151.68781208247
+  },
+  {
+    "step": 195,
+    "date": "2023-11-15",
+    "price": 4502.8798828125,
+    "action": "BUY",
+    "reasoning": "Bullish trend consensus (3 up days) with price 3.85% above 50-day MA and strong 20-day momentum (+4.36%). Slight negative expected return (-0.986%) is marginal; multi-day bullish agreement justifies entry from cash position.",
+    "portfolio_value": 192151.68781208247
+  },
+  {
+    "step": 196,
+    "date": "2023-11-22",
+    "price": 4556.6201171875,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish consensus (all 5 days down, -0.868% expected return). Lock in $94K unrealized gains before forecasted decline. Strong multi-day agreement on downside direction requires defensive action.",
+    "portfolio_value": 194444.9483491864
+  },
+  {
+    "step": 197,
+    "date": "2023-11-30",
+    "price": 4567.7998046875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish consensus (all 5 days down, -0.239% expected return) with elevated volatility. Stay in cash to avoid downside risk; re-entry warranted only when forecast turns bullish.",
+    "portfolio_value": 194444.9483491864
+  },
+  {
+    "step": 198,
+    "date": "2023-12-07",
+    "price": 4585.58984375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bearish consensus (3 down days) with prices declining to 4517.7 by day 5. Despite strong 20-day momentum, the near-term downside risk warrants staying in cash until forecast turns bullish.",
+    "portfolio_value": 194444.9483491864
+  },
+  {
+    "step": 199,
+    "date": "2023-12-14",
+    "price": 4719.5498046875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish consensus (all 5 days down, -0.258% expected return). Maintain cash position to avoid downside risk; re-entry warranted only when forecast turns bullish.",
+    "portfolio_value": 194444.9483491864
+  },
+  {
+    "step": 200,
+    "date": "2023-12-21",
+    "price": 4746.75,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish consensus (all 5 days down, -1.455% expected return). Maintain cash position to avoid downside risk; re-entry warranted only when forecast turns bullish.",
+    "portfolio_value": 194444.9483491864
+  },
+  {
+    "step": 201,
+    "date": "2023-12-29",
+    "price": 4769.830078125,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bearish consensus (3 down days) with neutral expected return. Despite strong 20-day momentum, the mixed trend and day-3 dip to 4728 lack conviction for entry. Maintain cash position until forecast turns clearly bullish.",
+    "portfolio_value": 194444.9483491864
+  },
+  {
+    "step": 202,
+    "date": "2024-01-08",
+    "price": 4763.5400390625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts -1.542% expected return with 3 down days over 5-day horizon. Despite strong 20-day momentum, the bearish consensus and negative expected return warrant staying in cash until forecast turns bullish.",
+    "portfolio_value": 194444.9483491864
+  },
+  {
+    "step": 203,
+    "date": "2024-01-16",
+    "price": 4765.97998046875,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5-day bullish consensus (all days up, +1.04% expected return) with low volatility. Price is 3.58% above 50-day MA with positive 20-day momentum. This is the first bullish signal after extended bearish forecasts\u2014strong entry opportunity.",
+    "portfolio_value": 194444.9483491864
+  },
+  {
+    "step": 204,
+    "date": "2024-01-23",
+    "price": 4864.60009765625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts bearish consensus (3 down days, -0.059% return) but recovery to 4,890.6 by day 5 lacks conviction for exit. Strong 20-day momentum and 4.67% above 50-day MA support maintaining position. Avoid churning on mixed signal.",
+    "portfolio_value": 198468.50356160844
+  },
+  {
+    "step": 205,
+    "date": "2024-01-30",
+    "price": 4924.97021484375,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish consensus (all 5 days down, -0.557% expected return). Lock in +$4,024 gains from successful entry on 2024-01-16 before predicted decline materializes.",
+    "portfolio_value": 200931.51523317726
+  },
+  {
+    "step": 206,
+    "date": "2024-02-06",
+    "price": 4954.22998046875,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish consensus (all days down, -1.237% expected return) with predicted decline to 4,827. Despite strong 20-day momentum, the clear negative signal warrants staying in cash until forecast turns bullish.",
+    "portfolio_value": 200931.51523317726
+  },
+  {
+    "step": 207,
+    "date": "2024-02-13",
+    "price": 4953.169921875,
+    "action": "BUY",
+    "reasoning": "Kronos forecasts unanimous 5-day bullish consensus (5/5 days up, +0.946% expected return) with low volatility. Price is 3.64% above 50-day MA with strong 20-day momentum. Clear re-entry opportunity after bearish forecast resolved.",
+    "portfolio_value": 200931.51523317726
+  },
+  {
+    "step": 208,
+    "date": "2024-02-21",
+    "price": 4981.7998046875,
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish consensus (all 5 days down, -1.543% expected return) with high volatility. Clear reversal from last week's bullish signal warrants exiting to protect gains before predicted decline.",
+    "portfolio_value": 202092.92213526194
+  },
+  {
+    "step": 209,
+    "date": "2024-02-28",
+    "price": 5069.759765625,
+    "action": "HOLD",
+    "reasoning": "Bearish consensus (3 down days, -0.039% return) with elevated volatility (1.162% spread) argues against entry. Wait for clearer bullish confirmation before re-entering despite positive 20-day momentum.",
+    "portfolio_value": 202092.92213526194
+  },
+  {
+    "step": 210,
+    "date": "2024-03-06",
+    "price": 5104.759765625,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish consensus (0 up, 5 down days, -1.768% return) with high volatility. Stay in cash and wait for bullish confirmation before re-entering.",
+    "portfolio_value": 202092.92213526194
+  },
+  {
+    "step": 211,
+    "date": "2024-03-13",
+    "price": 5165.31005859375,
+    "action": "HOLD",
+    "reasoning": "Bearish consensus (3 down, 2 up days) with weak -0.189% expected return lacks conviction for entry. Wait for stronger bullish signal before deploying cash, consistent with successful unanimous-consensus trading pattern.",
+    "portfolio_value": 202092.92213526194
+  },
+  {
+    "step": 212,
+    "date": "2024-03-20",
+    "price": 5224.6201171875,
+    "action": "HOLD",
+    "reasoning": "Forecast shows 4/5 bullish days but negative -1.276% expected return with elevated volatility (1.285% spread). Lacks the unanimous bullish consensus pattern that has driven successful entries. Maintain cash position and wait for clearer bullish confirmation.",
+    "portfolio_value": 202092.92213526194
+  },
+  {
+    "step": 213,
+    "date": "2024-03-27",
+    "price": 5248.490234375,
+    "action": "HOLD",
+    "reasoning": "Kronos forecasts unanimous 5-day bearish consensus (0 up, 5 down days, -1.626% return). Despite positive 20-day momentum, the clear bearish forecast warrants staying in cash to protect capital, consistent with successful trading pattern.",
+    "portfolio_value": 202092.92213526194
+  },
+  {
+    "step": 214,
+    "date": "2024-04-04",
+    "price": 5147.2099609375,
+    "action": "BUY",
+    "reasoning": "Unanimous 5-day bullish consensus (5/5 up days) with +1.29% expected return and low volatility. Price above 50-day MA with positive 20-day momentum confirms uptrend. Deploy full cash position on this clear bullish signal.",
+    "portfolio_value": 202092.92213526194
+  },
+  {
+    "step": 215,
+    "date": "2024-04-11",
+    "price": 5199.06005859375,
+    "action": "HOLD",
+    "reasoning": "Unanimous 5/5 bullish consensus with positive expected return and normal volatility confirms uptrend. Already fully invested with strong unrealized gains; maintain position to capture forecasted upside without churning.",
+    "portfolio_value": 204128.69254833477
+  },
+  {
+    "step": 216,
+    "date": "2024-04-18",
+    "price": 5011.1201171875,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEGaeRK7rdLu33ZJUD'} \u2014 defaulting to HOLD",
+    "portfolio_value": 196749.67901809962
+  },
+  {
+    "step": 217,
+    "date": "2024-04-25",
+    "price": 5048.419921875,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEHfdb2aiXvobviKYZ'} \u2014 defaulting to HOLD",
+    "portfolio_value": 198214.16688270547
+  },
+  {
+    "step": 218,
+    "date": "2024-05-02",
+    "price": 5064.2001953125,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEJPY7wFkzSHySoz1G'} \u2014 defaulting to HOLD",
+    "portfolio_value": 198833.74168056296
+  },
+  {
+    "step": 219,
+    "date": "2024-05-09",
+    "price": 5214.080078125,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEKWWhxgakfdGhBZRP'} \u2014 defaulting to HOLD",
+    "portfolio_value": 204718.41778989963
+  },
+  {
+    "step": 220,
+    "date": "2024-05-16",
+    "price": 5297.10009765625,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzELFf1UHKkZDGvWLtE'} \u2014 defaulting to HOLD",
+    "portfolio_value": 207978.00083977022
+  },
+  {
+    "step": 221,
+    "date": "2024-05-23",
+    "price": 5267.83984375,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEMusc2wvsTHSkuqyP'} \u2014 defaulting to HOLD",
+    "portfolio_value": 206829.1667608789
+  },
+  {
+    "step": 222,
+    "date": "2024-05-31",
+    "price": 5277.509765625,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEPHipovkXbYmZvmVW'} \u2014 defaulting to HOLD",
+    "portfolio_value": 207208.83317887413
+  },
+  {
+    "step": 223,
+    "date": "2024-06-07",
+    "price": 5346.990234375,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEQF28fnmpbZGhSuz9'} \u2014 defaulting to HOLD",
+    "portfolio_value": 209936.818061476
+  },
+  {
+    "step": 224,
+    "date": "2024-06-14",
+    "price": 5431.60009765625,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzERhpxiTEWfV2vm2iP'} \u2014 defaulting to HOLD",
+    "portfolio_value": 213258.82253413956
+  },
+  {
+    "step": 225,
+    "date": "2024-06-24",
+    "price": 5447.8701171875,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzESSyE6fjjLkTbAoMq'} \u2014 defaulting to HOLD",
+    "portfolio_value": 213897.62604423947
+  },
+  {
+    "step": 226,
+    "date": "2024-07-01",
+    "price": 5475.08984375,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzETCrze1mY2n1WNe5B'} \u2014 defaulting to HOLD",
+    "portfolio_value": 214966.34368398707
+  },
+  {
+    "step": 227,
+    "date": "2024-07-09",
+    "price": 5576.97998046875,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEUEdMdx1z9QDKkRj5'} \u2014 defaulting to HOLD",
+    "portfolio_value": 218966.81687675012
+  },
+  {
+    "step": 228,
+    "date": "2024-07-16",
+    "price": 5667.2001953125,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEUxHS1tJwNKhvwC9s'} \u2014 defaulting to HOLD",
+    "portfolio_value": 222509.09842186194
+  },
+  {
+    "step": 229,
+    "date": "2024-07-23",
+    "price": 5555.740234375,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEW1XzaYhf41qfVDZ4'} \u2014 defaulting to HOLD",
+    "portfolio_value": 218132.88890682618
+  },
+  {
+    "step": 230,
+    "date": "2024-07-30",
+    "price": 5436.43994140625,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEWs8VYLGqZQ5LuUWA'} \u2014 defaulting to HOLD",
+    "portfolio_value": 213448.8474551236
+  },
+  {
+    "step": 231,
+    "date": "2024-08-06",
+    "price": 5240.02978515625,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEXZoPsys4j9f7MJKA'} \u2014 defaulting to HOLD",
+    "portfolio_value": 205737.2711419677
+  },
+  {
+    "step": 232,
+    "date": "2024-08-13",
+    "price": 5434.43017578125,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEYHTT92EJdc6VaLg9'} \u2014 defaulting to HOLD",
+    "portfolio_value": 213369.93880149463
+  },
+  {
+    "step": 233,
+    "date": "2024-08-20",
+    "price": 5597.1201171875,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEZ1N644MVsK3GEF49'} \u2014 defaulting to HOLD",
+    "portfolio_value": 219757.57130732219
+  },
+  {
+    "step": 234,
+    "date": "2024-08-27",
+    "price": 5625.7998046875,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEZfoLytHbyUjvGsey'} \u2014 defaulting to HOLD",
+    "portfolio_value": 220883.6108310228
+  },
+  {
+    "step": 235,
+    "date": "2024-09-04",
+    "price": 5520.06982421875,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEaXeWLuPMgCuPrbPG'} \u2014 defaulting to HOLD",
+    "portfolio_value": 216732.37533210366
+  },
+  {
+    "step": 236,
+    "date": "2024-09-11",
+    "price": 5554.1298828125,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEbZQTNsMeKhNFe6oR'} \u2014 defaulting to HOLD",
+    "portfolio_value": 218069.66229369002
+  },
+  {
+    "step": 237,
+    "date": "2024-09-18",
+    "price": 5618.259765625,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEcEqSfNKHo3x4y8Ss'} \u2014 defaulting to HOLD",
+    "portfolio_value": 220587.5691815236
+  },
+  {
+    "step": 238,
+    "date": "2024-09-25",
+    "price": 5722.259765625,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEdCdhe9E9yXr7enGJ'} \u2014 defaulting to HOLD",
+    "portfolio_value": 224670.8811236382
+  },
+  {
+    "step": 239,
+    "date": "2024-10-02",
+    "price": 5709.5400390625,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEdsp3QHwxCtwpW1cq'} \u2014 defaulting to HOLD",
+    "portfolio_value": 224171.47139889695
+  },
+  {
+    "step": 240,
+    "date": "2024-10-09",
+    "price": 5792.0400390625,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEeYFMRSWE3UXWoZrs'} \u2014 defaulting to HOLD",
+    "portfolio_value": 227410.63712220898
+  },
+  {
+    "step": 241,
+    "date": "2024-10-16",
+    "price": 5842.47021484375,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEfSpaF91LM1dPhzEi'} \u2014 defaulting to HOLD",
+    "portfolio_value": 229390.6576896178
+  },
+  {
+    "step": 242,
+    "date": "2024-10-23",
+    "price": 5797.419921875,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEg9Ev4UdHStML9hNi'} \u2014 defaulting to HOLD",
+    "portfolio_value": 227621.86538889608
+  },
+  {
+    "step": 243,
+    "date": "2024-10-30",
+    "price": 5813.669921875,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEhRt1ZVa5bXXfteHg'} \u2014 defaulting to HOLD",
+    "portfolio_value": 228259.8828798515
+  },
+  {
+    "step": 244,
+    "date": "2024-11-06",
+    "price": 5929.0400390625,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEifHsHaTPNVdRMUcS'} \u2014 defaulting to HOLD",
+    "portfolio_value": 232789.6153536484
+  },
+  {
+    "step": 245,
+    "date": "2024-11-13",
+    "price": 5985.3798828125,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEjUf89t8EaA9s8YYd'} \u2014 defaulting to HOLD",
+    "portfolio_value": 235001.66493827576
+  },
+  {
+    "step": 246,
+    "date": "2024-11-20",
+    "price": 5917.10986328125,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEkC56xW4RYADzBDho'} \u2014 defaulting to HOLD",
+    "portfolio_value": 232321.20545711854
+  },
+  {
+    "step": 247,
+    "date": "2024-11-27",
+    "price": 5998.740234375,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEks14QJuv3XG9XPyr'} \u2014 defaulting to HOLD",
+    "portfolio_value": 235526.2272756412
+  },
+  {
+    "step": 248,
+    "date": "2024-12-05",
+    "price": 6075.10986328125,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEmj6Ca6DuzpX4ftd7'} \u2014 defaulting to HOLD",
+    "portfolio_value": 238524.69859994648
+  },
+  {
+    "step": 249,
+    "date": "2024-12-12",
+    "price": 6051.25,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEnS1NUpT5GfU4tHb1'} \u2014 defaulting to HOLD",
+    "portfolio_value": 237587.8979780854
+  },
+  {
+    "step": 250,
+    "date": "2024-12-19",
+    "price": 5867.080078125,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEo6SdUAvHAbPMgq9M'} \u2014 defaulting to HOLD",
+    "portfolio_value": 230356.90527259986
+  },
+  {
+    "step": 251,
+    "date": "2024-12-27",
+    "price": 5970.83984375,
+    "action": "HOLD",
+    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEow3eFZxeTBFBBPe5'} \u2014 defaulting to HOLD",
+    "portfolio_value": 234430.7849849804
+  }
+]
