@@ -1732,7 +1732,7 @@
     "date": "2024-04-18",
     "price": 5011.1201171875,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEGaeRK7rdLu33ZJUD'} \u2014 defaulting to HOLD",
+    "reasoning": "Kronos shows unanimous 5/5 bullish consensus with +0.747% expected return and low volatility. Already fully invested with strong unrealized gains; maintain position to capture the forecasted uptrend without overcommitting.",
     "portfolio_value": 196749.67901809962
   },
   {
@@ -1740,15 +1740,15 @@
     "date": "2024-04-25",
     "price": 5048.419921875,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEHfdb2aiXvobviKYZ'} \u2014 defaulting to HOLD",
+    "reasoning": "Kronos shows unanimous 5/5 bullish consensus with +0.138% expected return and low volatility. Already invested; holding through minor pullback as forecast confirms uptrend recovery ahead.",
     "portfolio_value": 198214.16688270547
   },
   {
     "step": 218,
     "date": "2024-05-02",
     "price": 5064.2001953125,
-    "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEJPY7wFkzSHySoz1G'} \u2014 defaulting to HOLD",
+    "action": "SELL",
+    "reasoning": "Unanimous 5-day bearish consensus (0/5 up, -1.922% return) + price below 50-day MA + negative 20-day momentum. Strong evidence to reduce exposure and protect substantial gains.",
     "portfolio_value": 198833.74168056296
   },
   {
@@ -1756,263 +1756,263 @@
     "date": "2024-05-09",
     "price": 5214.080078125,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEKWWhxgakfdGhBZRP'} \u2014 defaulting to HOLD",
-    "portfolio_value": 204718.41778989963
+    "reasoning": "Kronos shows bearish consensus (4/5 down days, -0.29% expected return). Despite price above 50-day MA, the declining forecast trend and recent SELL signal warrant staying in cash until clearer bullish confirmation emerges.",
+    "portfolio_value": 198833.74168056296
   },
   {
     "step": 220,
     "date": "2024-05-16",
     "price": 5297.10009765625,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzELFf1UHKkZDGvWLtE'} \u2014 defaulting to HOLD",
-    "portfolio_value": 207978.00083977022
+    "reasoning": "Kronos shows unanimous 5/5 bearish consensus with -0.275% expected return. Remain in cash until forecast turns positive; strong recent momentum doesn't override the model's clear directional signal.",
+    "portfolio_value": 198833.74168056296
   },
   {
     "step": 221,
     "date": "2024-05-23",
     "price": 5267.83984375,
-    "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEMusc2wvsTHSkuqyP'} \u2014 defaulting to HOLD",
-    "portfolio_value": 206829.1667608789
+    "action": "BUY",
+    "reasoning": "Kronos shows bullish 3/5 consensus with +0.705% expected return and normal volatility. Market is above 50-day MA with strong 20-day momentum (+4.35%). Entry justified after recent cash position.",
+    "portfolio_value": 198833.74168056296
   },
   {
     "step": 222,
     "date": "2024-05-31",
     "price": 5277.509765625,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEPHipovkXbYmZvmVW'} \u2014 defaulting to HOLD",
-    "portfolio_value": 207208.83317887413
+    "reasoning": "Bullish trend (3/5 up days) with price above 50-day MA and strong recent momentum. Slight negative forecast (-0.42%) doesn't warrant selling; avoid churning on already-profitable position.",
+    "portfolio_value": 199198.73127880335
   },
   {
     "step": 223,
     "date": "2024-06-07",
     "price": 5346.990234375,
-    "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEQF28fnmpbZGhSuz9'} \u2014 defaulting to HOLD",
-    "portfolio_value": 209936.818061476
+    "action": "SELL",
+    "reasoning": "Kronos shows strong bearish consensus (4/5 down days, -0.39% expected return). Lock in gains from recent bullish entry while forecast clearly signals downside risk.",
+    "portfolio_value": 201821.26005436448
   },
   {
     "step": 224,
     "date": "2024-06-14",
     "price": 5431.60009765625,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzERhpxiTEWfV2vm2iP'} \u2014 defaulting to HOLD",
-    "portfolio_value": 213258.82253413956
+    "reasoning": "Kronos shows unanimous 5/5 bearish consensus with all forecast days declining. Despite positive recent momentum, the consistent downside bias warrants staying in cash. Wait for reversal confirmation before re-entry.",
+    "portfolio_value": 201821.26005436448
   },
   {
     "step": 225,
     "date": "2024-06-24",
     "price": 5447.8701171875,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzESSyE6fjjLkTbAoMq'} \u2014 defaulting to HOLD",
-    "portfolio_value": 213897.62604423947
+    "reasoning": "Kronos shows bearish consensus (3/5 down days) with only +0.209% expected return. Despite positive recent momentum, the forecast lacks bullish conviction. Remain in cash and wait for stronger buy signals with clearer upside confirmation.",
+    "portfolio_value": 201821.26005436448
   },
   {
     "step": 226,
     "date": "2024-07-01",
     "price": 5475.08984375,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzETCrze1mY2n1WNe5B'} \u2014 defaulting to HOLD",
-    "portfolio_value": 214966.34368398707
+    "reasoning": "Kronos shows unanimous bearish consensus (5/5 down days, -0.169% expected return) with elevated volatility. Despite positive recent momentum, the strong negative forecast and high volatility warrant staying in cash. Wait for clearer bullish signals before re-entering.",
+    "portfolio_value": 201821.26005436448
   },
   {
     "step": 227,
     "date": "2024-07-09",
     "price": 5576.97998046875,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEUEdMdx1z9QDKkRj5'} \u2014 defaulting to HOLD",
-    "portfolio_value": 218966.81687675012
+    "reasoning": "Kronos shows unanimous 5/5 bearish consensus with -0.515% expected return. Strong quantitative signal to remain in cash despite positive recent momentum. Downside risk outweighs upward bias.",
+    "portfolio_value": 201821.26005436448
   },
   {
     "step": 228,
     "date": "2024-07-16",
     "price": 5667.2001953125,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEUxHS1tJwNKhvwC9s'} \u2014 defaulting to HOLD",
-    "portfolio_value": 222509.09842186194
+    "reasoning": "Kronos shows bearish 5-day consensus (4/5 down days) with flat expected return (+0.023%), conflicting with strong recent momentum. Remain in cash to avoid unfavorable risk/reward at current levels.",
+    "portfolio_value": 201821.26005436448
   },
   {
     "step": 229,
     "date": "2024-07-23",
     "price": 5555.740234375,
-    "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEW1XzaYhf41qfVDZ4'} \u2014 defaulting to HOLD",
-    "portfolio_value": 218132.88890682618
+    "action": "BUY",
+    "reasoning": "Kronos shows strong bullish consensus (4/5 up days) with low volatility. Price is 2.55% above 50-day MA with positive 20-day momentum. Favorable risk/reward for entry from cash position.",
+    "portfolio_value": 201821.2600543645
   },
   {
     "step": 230,
     "date": "2024-07-30",
     "price": 5436.43994140625,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEWs8VYLGqZQ5LuUWA'} \u2014 defaulting to HOLD",
-    "portfolio_value": 213448.8474551236
+    "reasoning": "Kronos shows unanimous bullish consensus (5/5 up days) with +1.208% expected return and low volatility. Already invested; maintain position to capture forecasted upside.",
+    "portfolio_value": 197487.48373724398
   },
   {
     "step": 231,
     "date": "2024-08-06",
     "price": 5240.02978515625,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEXZoPsys4j9f7MJKA'} \u2014 defaulting to HOLD",
-    "portfolio_value": 205737.2711419677
+    "reasoning": "Mixed forecast (3/5 up days but -0.109% expected return) with price 3.8% below 50-day MA and recent 6% decline. Downside risk outweighs upside; maintain position without adding exposure.",
+    "portfolio_value": 190352.56677755842
   },
   {
     "step": 232,
     "date": "2024-08-13",
     "price": 5434.43017578125,
-    "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEYHTT92EJdc6VaLg9'} \u2014 defaulting to HOLD",
-    "portfolio_value": 213369.93880149463
+    "action": "SELL",
+    "reasoning": "Kronos unanimous bearish consensus (5/5 down days, -1.677% expected return) combined with price below 50-day MA and recent -4.11% 20-day decline. Strong quantitative signal to exit and protect portfolio gains.",
+    "portfolio_value": 197414.47574663605
   },
   {
     "step": 233,
     "date": "2024-08-20",
     "price": 5597.1201171875,
-    "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEZ1N644MVsK3GEF49'} \u2014 defaulting to HOLD",
-    "portfolio_value": 219757.57130732219
+    "action": "BUY",
+    "reasoning": "Kronos unanimous bullish consensus (5/5 up days, +0.434% expected return) with low volatility and price above 50-day MA. Strong entry signal with positive momentum.",
+    "portfolio_value": 197414.47574663608
   },
   {
     "step": 234,
     "date": "2024-08-27",
     "price": 5625.7998046875,
-    "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEZfoLytHbyUjvGsey'} \u2014 defaulting to HOLD",
-    "portfolio_value": 220883.6108310228
+    "action": "SELL",
+    "reasoning": "Kronos shows strong bearish consensus (4/5 down days) predicting decline to 5553.3. Price near forecast high; take profits on recent rally with minimal expected return ahead.",
+    "portfolio_value": 198426.02907296253
   },
   {
     "step": 235,
     "date": "2024-09-04",
     "price": 5520.06982421875,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEaXeWLuPMgCuPrbPG'} \u2014 defaulting to HOLD",
-    "portfolio_value": 216732.37533210366
+    "reasoning": "Bearish trend (3/5 down days) with weak expected return (+0.462%) and significant mid-period dip to 5358.9 lacks conviction for entry. Waiting for stronger bullish consensus before deploying cash.",
+    "portfolio_value": 198426.02907296253
   },
   {
     "step": 236,
     "date": "2024-09-11",
     "price": 5554.1298828125,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEbZQTNsMeKhNFe6oR'} \u2014 defaulting to HOLD",
-    "portfolio_value": 218069.66229369002
+    "reasoning": "Kronos unanimous bearish consensus (5/5 down days, -2.249% expected return) signals downtrend to ~$5,399. Already in cash; wait for better entry point at lower levels rather than buying into weakness.",
+    "portfolio_value": 198426.02907296253
   },
   {
     "step": 237,
     "date": "2024-09-18",
     "price": 5618.259765625,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEcEqSfNKHo3x4y8Ss'} \u2014 defaulting to HOLD",
-    "portfolio_value": 220587.5691815236
+    "reasoning": "Agent did not reach a decision \u2014 defaulting to HOLD",
+    "portfolio_value": 198426.02907296253
   },
   {
     "step": 238,
     "date": "2024-09-25",
     "price": 5722.259765625,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEdCdhe9E9yXr7enGJ'} \u2014 defaulting to HOLD",
-    "portfolio_value": 224670.8811236382
+    "reasoning": "Kronos shows unanimous bearish consensus (5/5 down days, -0.579% expected return). While technical structure remains positive, the consistent downside forecast warrants staying in cash rather than initiating a long position into predicted weakness.",
+    "portfolio_value": 198426.02907296253
   },
   {
     "step": 239,
     "date": "2024-10-02",
     "price": 5709.5400390625,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEdsp3QHwxCtwpW1cq'} \u2014 defaulting to HOLD",
-    "portfolio_value": 224171.47139889695
+    "reasoning": "Kronos forecast shows weak bearish signal (-0.206% return, 3/5 down days) without strong conviction. Technical backdrop remains positive (price 3.09% above 50-day MA, +3.43% 20-day return). Insufficient evidence to deploy capital; staying in cash until clearer directional signal emerges.",
+    "portfolio_value": 198426.02907296253
   },
   {
     "step": 240,
     "date": "2024-10-09",
     "price": 5792.0400390625,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEeYFMRSWE3UXWoZrs'} \u2014 defaulting to HOLD",
-    "portfolio_value": 227410.63712220898
+    "reasoning": "Kronos shows unanimous bearish consensus (5/5 down days, -0.468% expected return) forecasting pullback to ~$5,677. Remain in cash and wait for clearer entry signals or stabilization before deploying capital.",
+    "portfolio_value": 198426.02907296253
   },
   {
     "step": 241,
     "date": "2024-10-16",
     "price": 5842.47021484375,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEfSpaF91LM1dPhzEi'} \u2014 defaulting to HOLD",
-    "portfolio_value": 229390.6576896178
+    "reasoning": "Kronos shows unanimous bearish consensus (5/5 down days, -0.777% expected return) forecasting pullback to ~$5,678. Remain in cash to avoid buying into weakness; better entry opportunity likely after predicted decline.",
+    "portfolio_value": 198426.02907296253
   },
   {
     "step": 242,
     "date": "2024-10-23",
     "price": 5797.419921875,
-    "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEg9Ev4UdHStML9hNi'} \u2014 defaulting to HOLD",
-    "portfolio_value": 227621.86538889608
+    "action": "BUY",
+    "reasoning": "Kronos forecasts +0.868% return with bullish 3/5 up-day consensus. Technical confirmation: price +2.37% above 50-day MA with positive 20-day momentum. Moderate volatility supports entry. Markets have upward bias and this setup meets buy criteria.",
+    "portfolio_value": 198426.02907296253
   },
   {
     "step": 243,
     "date": "2024-10-30",
     "price": 5813.669921875,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEhRt1ZVa5bXXfteHg'} \u2014 defaulting to HOLD",
-    "portfolio_value": 228259.8828798515
+    "reasoning": "Kronos forecasts +0.289% return with bullish 4/5 up-day consensus. Price is above 50-day MA with positive momentum. Already invested and capturing the forecasted upside\u2014no need to churn.",
+    "portfolio_value": 198982.21148097978
   },
   {
     "step": 244,
     "date": "2024-11-06",
     "price": 5929.0400390625,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEifHsHaTPNVdRMUcS'} \u2014 defaulting to HOLD",
-    "portfolio_value": 232789.6153536484
+    "reasoning": "Kronos forecasts -1.528% return with unanimous 5/5 down-day consensus, but technical support is strong (price +3.9% above 50-day MA, +2.37% 20-day return). Holding to protect substantial unrealized gains while monitoring for pullback confirmation.",
+    "portfolio_value": 202930.9394557845
   },
   {
     "step": 245,
     "date": "2024-11-13",
     "price": 5985.3798828125,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEjUf89t8EaA9s8YYd'} \u2014 defaulting to HOLD",
-    "portfolio_value": 235001.66493827576
+    "reasoning": "Kronos forecasts bearish 3/5 down-day trend but modest +0.607% return. Technical support strong: price 4.19% above 50-day MA with +2.45% 20-day momentum. Maintain position given conflicting signals and substantial unrealized gains.",
+    "portfolio_value": 204859.2612997347
   },
   {
     "step": 246,
     "date": "2024-11-20",
     "price": 5917.10986328125,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEkC56xW4RYADzBDho'} \u2014 defaulting to HOLD",
-    "portfolio_value": 232321.20545711854
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish days with +0.408% expected return. Technical support strong: price above 50-day MA (+2.22%), positive 20-day momentum (+2.06%). Hold to capture forecasted upside while maintaining profitable position.",
+    "portfolio_value": 202522.60998537927
   },
   {
     "step": 247,
     "date": "2024-11-27",
     "price": 5998.740234375,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEks14QJuv3XG9XPyr'} \u2014 defaulting to HOLD",
-    "portfolio_value": 235526.2272756412
+    "reasoning": "Kronos forecasts bullish 4/5 up-day consensus with +0.026% expected return. Price is above 50-day MA with strong 20-day momentum (+3.18%). Already invested and capturing gains; no strong sell signal warrants exit.",
+    "portfolio_value": 205316.54083844167
   },
   {
     "step": 248,
     "date": "2024-12-05",
     "price": 6075.10986328125,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEmj6Ca6DuzpX4ftd7'} \u2014 defaulting to HOLD",
-    "portfolio_value": 238524.69859994648
+    "reasoning": "Kronos forecasts bullish 4/5 up-day consensus with +0.434% expected return. Price is 3.68% above 50-day MA with positive momentum. Low volatility environment supports maintaining full position.",
+    "portfolio_value": 207930.4143217932
   },
   {
     "step": 249,
     "date": "2024-12-12",
     "price": 6051.25,
-    "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEnS1NUpT5GfU4tHb1'} \u2014 defaulting to HOLD",
-    "portfolio_value": 237587.8979780854
+    "action": "SELL",
+    "reasoning": "Kronos forecasts unanimous 5/5 down-day consensus with -0.688% expected return. Lock in $107K unrealized gains before predicted decline materializes.",
+    "portfolio_value": 207113.77209319454
   },
   {
     "step": 250,
     "date": "2024-12-19",
     "price": 5867.080078125,
-    "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEo6SdUAvHAbPMgq9M'} \u2014 defaulting to HOLD",
-    "portfolio_value": 230356.90527259986
+    "action": "BUY",
+    "reasoning": "Kronos forecasts strong bullish 4/5 up-day consensus with prices rising to $5,949 by day 5. Despite elevated volatility and price below 50-day MA, the consistent upward trend and positive expected return justify entry at current pullback levels.",
+    "portfolio_value": 207113.77209319454
   },
   {
     "step": 251,
     "date": "2024-12-27",
     "price": 5970.83984375,
     "action": "HOLD",
-    "reasoning": "LLM error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYuzEow3eFZxeTBFBBPe5'} \u2014 defaulting to HOLD",
-    "portfolio_value": 234430.7849849804
+    "reasoning": "Kronos forecasts unanimous 5/5 bullish days with +1.04% expected return. Price above 50-day MA with positive momentum. Already invested with strong gains; maintain position.",
+    "portfolio_value": 210776.595194966
   }
 ]

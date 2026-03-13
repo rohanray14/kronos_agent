@@ -55,6 +55,13 @@ from agent import (
 USE_LLM = "--no-llm" not in sys.argv
 LLM_MODEL = os.getenv("TRADING_AGENT_MODEL", "claude-haiku-4-5-20251001")
 
+# Resume support: --resume-from STEP replays existing log up to STEP, then continues with LLM
+RESUME_FROM_STEP = None
+for i, arg in enumerate(sys.argv):
+    if arg == "--resume-from" and i + 1 < len(sys.argv):
+        RESUME_FROM_STEP = int(sys.argv[i + 1])
+        break
+
 # ─────────────────────────────────────────────
 # LANGGRAPH AGENT
 # ─────────────────────────────────────────────
@@ -319,6 +326,62 @@ def run_backtest(df, predictor) -> tuple:
         "trade_history": trade_history,
     }
 
+    # --- Resume support: replay existing log up to RESUME_FROM_STEP ---
+    if RESUME_FROM_STEP is not None:
+        reasoning_file = f"reasoning_log_{MODE}.json"
+        if not os.path.exists(reasoning_file):
+            # Try the _full variant
+            reasoning_file = f"reasoning_log_full.json"
+        print(f"\n🔄 Resuming from step {RESUME_FROM_STEP} using {reasoning_file}...")
+        with open(reasoning_file, "r") as f:
+            existing_log = json.load(f)
+
+        # Replay portfolio state from existing log entries before resume point
+        test_indices_all = [i for i, d in enumerate(dates) if d >= pd.Timestamp(TEST_START)]
+        step_indices_all = test_indices_all[::FORECAST_STEPS]
+
+        for entry in existing_log:
+            if entry["step"] >= RESUME_FROM_STEP:
+                break
+            step_num = entry["step"]
+            idx = step_indices_all[step_num] if step_num < len(step_indices_all) else None
+            if idx is None:
+                continue
+
+            current_date = dates[idx]
+            current_price = float(df["close"].iloc[idx])
+            action = entry["action"]
+
+            execute(action, state, current_price)
+            _portfolio_state["cash"] = state.cash
+            _portfolio_state["shares"] = state.shares
+
+            pv = state.portfolio_value(current_price)
+            state.portfolio_values.append(pv)
+            state.actions.append(action)
+            state.dates.append(current_date)
+
+            # Skip expensive Kronos forecast during replay — use placeholder
+            state.forecasts.append({
+                "date": current_date,
+                "actual": current_price,
+                "forecast_close": current_price,
+                "forecast_high": current_price,
+                "forecast_low": current_price,
+            })
+
+            reasoning_log.append(entry)
+            trade_history.append({
+                "date": entry["date"],
+                "price": entry["price"],
+                "action": action,
+                "portfolio_value": round(pv, 0),
+                "reasoning": entry["reasoning"],
+            })
+
+        print(f"   ✓ Replayed {len(reasoning_log)} steps, portfolio: ${state.portfolio_value(float(df['close'].iloc[step_indices_all[reasoning_log[-1]['step']]])):.0f}")
+        print(f"   Continuing from step {RESUME_FROM_STEP} with LLM...\n")
+
     test_count = len(df[df.index >= TEST_START])
     print(f"\n🔁 Running backtest ({TEST_START} → {TEST_END})...")
     print(f"   Steps: {test_count} trading days | Forecast horizon: {FORECAST_STEPS} days")
@@ -328,6 +391,9 @@ def run_backtest(df, predictor) -> tuple:
     step_indices = test_indices[::FORECAST_STEPS]
 
     for step_num, idx in enumerate(step_indices):
+        # Skip already-replayed steps when resuming
+        if RESUME_FROM_STEP is not None and step_num < RESUME_FROM_STEP:
+            continue
         if idx < LOOKBACK_DAYS:
             continue
 

@@ -1,0 +1,18 @@
+{
+  "mode": "full",
+  "reward_type": "log_return",
+  "timesteps": 100000,
+  "seed": 42,
+  "test_start": "2023-01-01",
+  "test_end": "2024-12-31",
+  "rl_return": 50.72,
+  "rl_sharpe": 1.71,
+  "rl_max_drawdown": -9.41,
+  "rl_final_value": 150716.08,
+  "rule_return": 28.49,
+  "bh_return": 54.46,
+  "rl_actions": {
+    "HOLD": 10,
+    "BUY": 91
+  }
+}

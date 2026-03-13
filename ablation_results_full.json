@@ -1,0 +1,45 @@
+{
+  "mode": "full",
+  "timesteps": 100000,
+  "forecast_cost": 0.0001,
+  "tx_cost": 0.0,
+  "test_start": "2023-01-01",
+  "test_end": "2024-12-31",
+  "metrics": {
+    "Buy & Hold": {
+      "return": 54.46,
+      "sharpe": 1.798,
+      "max_dd": -9.41,
+      "final": 154464.54
+    },
+    "Rule-Based": {
+      "return": 32.63,
+      "sharpe": 1.329,
+      "max_dd": -10.99,
+      "final": 132631.91
+    },
+    "RL (no forecast)": {
+      "return": 50.35,
+      "sharpe": 1.699,
+      "max_dd": -9.41,
+      "final": 150347.42
+    },
+    "RL (always forecast)": {
+      "return": 50.72,
+      "sharpe": 1.71,
+      "max_dd": -9.41,
+      "final": 150716.08
+    },
+    "RL (gated forecast)": {
+      "return": 54.46,
+      "sharpe": 1.798,
+      "max_dd": -9.41,
+      "final": 154464.54
+    }
+  },
+  "gated_forecast_rate": 1.0,
+  "gated_action_distribution": {
+    "BUY (forecast)": 90,
+    "HOLD (forecast)": 11
+  }
+}
