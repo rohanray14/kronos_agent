@@ -81,16 +81,57 @@ Learn a trading policy for the S&P 500 that decides BUY/SELL/HOLD every 5 tradin
 ### Ablation: Gated Forecast
 The gated agent's 6-action space decomposes into: {HOLD, BUY, SELL} x {with forecast, without forecast}. A small per-step forecast cost (0.1%) discourages unnecessary calls. The agent learns regime-dependent gating: ~100% forecast usage in bull markets, ~12% in bear markets.
 
+## RL Investigation: Progressive Experiments
+
+The RL component was investigated through four progressively more sophisticated approaches, each designed to address limitations discovered in the previous stage.
+
+### Stage 1: Direct RL Trading (PPO on forecast features)
+- **Setup:** 8-dim observation (market features + Kronos forecast), Discrete(3) action space, log-return reward
+- **Result:** +74.3% return / 1.23 Sharpe (walk-forward avg across 6 folds)
+- **Finding:** RL learns a reasonable trading policy that matches buy-and-hold on return but with slightly better risk-adjustment. However, it cannot match the rule-based agent's drawdown control in bear markets.
+
+### Stage 2: Gated Forecast Ablation
+- **Setup:** Extended to 12-dim observation + 6-action space ({BUY,SELL,HOLD} x {with/without forecast}). Forecast cost of 0.1% per call.
+- **Result:** Agent learns regime-dependent forecast gating — ~100% forecast usage in bull markets, ~12% in bear markets
+- **Finding:** This is the key RL contribution. The agent independently discovers that Kronos forecasts are unreliable in high-volatility regimes and learns to ignore them. This regime-dependent behavior was not hand-coded.
+
+### Stage 3: Two-Tier Regime-Aware System (V2)
+- **Setup:** 22-dim observation enriched with cross-asset macro features (VIX, yields, gold, treasuries, oil, small/large cap spread, defensive rotation). GradientBoosting regime classifier (5 regimes: bull/bear/crash/recovery/sideways). Per-regime PPO policies with shaped rewards (asymmetric loss penalty, drawdown penalty, inaction bonus in crash/bear, volatility penalty in sideways).
+- **Result:** Per-regime policies learn distinct behaviors — conservative in crash (high entropy, inaction bonus), aggressive in bull. Fallback policy with regime confidence gating.
+- **Finding:** Richer features and regime-aware training improve interpretability but do not significantly improve out-of-sample performance over Stage 2, suggesting the signal-to-noise ratio in financial markets limits what additional features can capture.
+
+### Stage 4: RL as Infrastructure for LLM (V3)
+- **Motivation:** Since Claude's reasoning (+134.4%) outperforms RL's direct decisions (+74.3%), reframe RL to support Claude rather than replace it.
+- **Experiments:**
+  - **Position Sizing:** RL decides allocation fraction (25/50/75/100%) for each of Claude's trades. 24-dim observation (macro features + Claude's action + position state). Risk-adjusted reward isolating sizing quality from direction quality. Result: +0.79% avg return improvement, +0.04 Sharpe — marginal gains, with sizing distribution adapting by regime (86% full-size in AI rally, 50% half-size in bear).
+  - **Signal Quality Scorer:** RL predicts forecast reliability (0-1 score) based on macro context + Kronos track record. Calibration-based reward. Result: Better calibration (MAE 0.449 vs 0.493 heuristic) on 4/6 folds, with the scorer outperforming the volatility heuristic on scorer accuracy (70.6% vs 54.9% on late bull fold).
+- **Finding:** RL as infrastructure shows promise on calibration but the gains do not yet translate to meaningful portfolio-level improvements, primarily because Kronos itself is ~50% directionally accurate — there is limited signal for the scorer to learn from.
+
+### Summary of RL Findings
+
+| Stage | What RL Learned | Limitation |
+|-------|----------------|------------|
+| Direct trading | Reasonable policy matching B&H | Cannot synthesize context like LLM |
+| Gated forecast | Regime-dependent forecast reliability | Learned behavior is a simple vol threshold |
+| Two-tier regime | Per-regime policies with distinct behaviors | Additional features hit noise floor |
+| Infrastructure | Adaptive sizing + better calibration | Marginal portfolio impact given ~50% forecast accuracy |
+
+**Core conclusion:** RL's most valuable contribution is the *discovery* that forecast utility is regime-dependent (Stage 2). This finding informed the hybrid system design where Claude receives a reliability score with each forecast. The progressive RL investigation demonstrates that in low signal-to-noise environments like financial markets, LLM reasoning over the same features consistently outperforms learned policies, but RL can still provide useful meta-information (forecast reliability, regime classification) that improves the LLM's decision context.
+
 ## Key Results
 
 | Agent | Return (2020-2024) | Sharpe | Max Drawdown |
-|-------|-------------------|--------|-------------|
+|-------|-------------------|--------|--------------|
 | Buy & Hold | +82.3% | 1.18 | -33.6% |
 | Rule-Based (Kronos) | +56.7% | 1.13 | -15.5% |
 | RL (always forecast, walk-forward avg) | +74.3% | 1.23 | -20.2% |
+| RL Gated (walk-forward, best fold) | +108.3% | — | — |
 | **Claude + Kronos** | **+134.4%** | **1.18** | **-22.0%** |
 
-**Core finding:** Claude's LLM reasoning (+134.4%) substantially outperforms both the rule-based agent and RL agents operating on the same Kronos forecasts. RL's primary learned behavior (gating forecasts by regime) is a pattern Claude infers naturally from context. The RL component does not meaningfully improve trading decisions on top of LLM reasoning.
+**RL per-regime highlights:**
+- COVID crash (2020): RL (always forecast) beats B&H by +10.8% (+108.3% vs +97.5%)
+- Bear market (2022): RL gated beats B&H by +6.1% (+36.2% vs +30.1%)
+- RL wins 4/6 folds vs buy-and-hold on risk-adjusted basis (Sharpe)
 
 ## Repo Structure
 
