@@ -26,7 +26,8 @@ Usage:
     python train_rl_walkforward.py --timesteps 200000       # more training
     python train_rl_walkforward.py --seeds 5                # multi-seed eval
     python train_rl_walkforward.py --precompute-only        # just cache forecasts
-    python train_rl_walkforward.py --gated                  # include gated forecast agent
+    python train_rl_walkforward.py --gated                  # include gated forecast agent (hard gate)
+    python train_rl_walkforward.py --soft-gated             # include soft gated agent (forecast + confidence)
     python train_rl_walkforward.py --tickers SPY,QQQ,DIA    # custom ticker pool
 """
 
@@ -56,7 +57,7 @@ from agent import (
     load_kronos, get_forecast, execute, decide,
     AgentState,
 )
-from trading_env import CachedTradingEnv, CachedGatedTradingEnv
+from trading_env import CachedTradingEnv, CachedGatedTradingEnv, CachedSoftGatedTradingEnv
 
 
 # ─────────────────────────────────────────────
@@ -116,6 +117,8 @@ def parse_args():
     parser.add_argument("--forecast-cost", type=float, default=0.001)
     parser.add_argument("--single-ticker", action="store_true",
                         help="Train on SPY only (baseline, no multi-ticker)")
+    parser.add_argument("--soft-gated", action="store_true",
+                        help="Include soft gated forecast agent (always forecast + confidence)")
     parser.add_argument("--tickers", type=str, default=None,
                         help="Custom ticker pool (comma-separated, e.g., 'SPY,QQQ,DIA')")
     return parser.parse_args()
@@ -234,6 +237,42 @@ class MultiTickerGatedTrainEnv(gym.Env):
     metadata = {"render_modes": []}
 
     def __init__(self, ticker_envs: dict[str, CachedGatedTradingEnv]):
+        super().__init__()
+        self.ticker_envs = ticker_envs
+        self.ticker_names = list(ticker_envs.keys())
+        self._current_ticker = None
+        self._current_env = None
+
+        sample_env = next(iter(ticker_envs.values()))
+        self.action_space = sample_env.action_space
+        self.observation_space = sample_env.observation_space
+
+    @property
+    def step_indices(self):
+        return [idx for env in self.ticker_envs.values()
+                for idx in env.step_indices]
+
+    def reset(self, seed=None, options=None):
+        super().reset(seed=seed)
+        ticker_idx = self.np_random.integers(0, len(self.ticker_names))
+        self._current_ticker = self.ticker_names[ticker_idx]
+        self._current_env = self.ticker_envs[self._current_ticker]
+        obs, info = self._current_env.reset(seed=seed)
+        info["ticker"] = self._current_ticker
+        return obs, info
+
+    def step(self, action):
+        obs, reward, terminated, truncated, info = self._current_env.step(action)
+        info["ticker"] = self._current_ticker
+        return obs, reward, terminated, truncated, info
+
+
+class MultiTickerSoftGatedTrainEnv(gym.Env):
+    """Same as MultiTickerTrainEnv but for soft gated forecast envs."""
+
+    metadata = {"render_modes": []}
+
+    def __init__(self, ticker_envs: dict[str, CachedSoftGatedTradingEnv]):
         super().__init__()
         self.ticker_envs = ticker_envs
         self.ticker_names = list(ticker_envs.keys())
@@ -541,6 +580,7 @@ def run_fold(fold_config, ticker_data, predictor, args, train_tickers):
     train_envs = {}
     train_envs_nf = {}     # no-forecast variants
     train_envs_gated = {}  # gated variants
+    train_envs_soft = {}   # soft gated variants
 
     total_train_steps = 0
     for ticker in train_tickers:
@@ -571,6 +611,14 @@ def run_fold(fold_config, ticker_data, predictor, args, train_tickers):
             ensure_cache(g_env, g_cache)
             train_envs_gated[ticker] = g_env
 
+        # Soft gated env (if needed)
+        if args.soft_gated:
+            sg_env = CachedSoftGatedTradingEnv(**common)
+            sg_cache = get_cache_path(ticker, fold_num, "train", gated=False)
+            # Reuse the standard forecast cache (same forecasts, different obs)
+            ensure_cache(sg_env, sg_cache)
+            train_envs_soft[ticker] = sg_env
+
     print(f"  Total training steps across tickers: {total_train_steps}")
 
     # ─── Build test env (SPY only) ───
@@ -592,6 +640,11 @@ def run_fold(fold_config, ticker_data, predictor, args, train_tickers):
             **test_common, forecast_cost=args.forecast_cost)
         g_test_cache = get_cache_path(TEST_TICKER, fold_num, "test", gated=True)
         ensure_cache(test_env_gated, g_test_cache)
+
+    if args.soft_gated:
+        test_env_soft = CachedSoftGatedTradingEnv(**test_common)
+        sg_test_cache = get_cache_path(TEST_TICKER, fold_num, "test", gated=False)
+        ensure_cache(test_env_soft, sg_test_cache)
 
     test_steps = len(test_env.step_indices)
     print(f"  Test steps ({TEST_TICKER}): {test_steps}")
@@ -685,6 +738,29 @@ def run_fold(fold_config, ticker_data, predictor, args, train_tickers):
         print(f"      Mean: {gated_agg['metrics']['return_mean']:+.1f}% "
               f"+/- {gated_agg['metrics']['return_std']:.1f}%")
 
+    # ─── Agent 6: RL (soft gated forecast) — optional ───
+    if args.soft_gated:
+        agent_num = 6 if args.gated else 5
+        print(f"  [{agent_num}] RL (soft gated forecast) x{args.seeds} seeds...")
+        soft_seed_results = []
+        for seed in range(args.seeds):
+            if len(train_tickers) > 1:
+                multi_env = MultiTickerSoftGatedTrainEnv(train_envs_soft)
+            else:
+                multi_env = train_envs_soft[train_tickers[0]]
+
+            soft_model = train_ppo(
+                multi_env, args.timesteps, args.lr, seed=42 + seed)
+            soft_res = evaluate_rl(soft_model, test_env_soft)
+            soft_metrics = compute_fold_metrics(soft_res["portfolio_values"])
+            soft_seed_results.append({"metrics": soft_metrics, **soft_res})
+            print(f"      Seed {seed}: {soft_metrics['return']:+.1f}%")
+
+        soft_agg = aggregate_seeds(soft_seed_results)
+        fold_results["agents"]["RL (soft gated)"] = soft_agg
+        print(f"      Mean: {soft_agg['metrics']['return_mean']:+.1f}% "
+              f"+/- {soft_agg['metrics']['return_std']:.1f}%")
+
     return fold_results
 
 
@@ -772,6 +848,7 @@ def plot_results(all_fold_results, summary, train_tickers, args):
         "RL (no forecast)": "#E91E63",
         "RL (always forecast)": "#2196F3",
         "RL (gated forecast)": "#4CAF50",
+        "RL (soft gated)": "#9C27B0",
     }
 
     ticker_label = (f"Multi-Ticker ({', '.join(train_tickers)})"
@@ -923,6 +1000,8 @@ def main():
     print(f"  Reward: {args.reward} | Tx cost: {args.tx_cost}")
     if args.gated:
         print(f"  Gated forecast: ON (cost={args.forecast_cost})")
+    if args.soft_gated:
+        print(f"  Soft gated forecast: ON (always forecast + confidence score)")
     print("=" * 70)
 
     # 1. Load all ticker data
@@ -965,7 +1044,8 @@ def main():
     print("  " + "-" * 95)
 
     for agent in ["Buy & Hold", "Rule-Based", "RL (no forecast)",
-                  "RL (always forecast)", "RL (gated forecast)"]:
+                  "RL (always forecast)", "RL (gated forecast)",
+                  "RL (soft gated)"]:
         if agent not in summary:
             continue
         s = summary[agent]
@@ -981,7 +1061,8 @@ def main():
     # Per-fold breakdown
     print(f"\n  PER-FOLD BREAKDOWN (test returns):")
     agents_for_table = [a for a in ["Buy & Hold", "RL (no forecast)",
-                                     "RL (always forecast)", "RL (gated forecast)"]
+                                     "RL (always forecast)", "RL (gated forecast)",
+                                     "RL (soft gated)"]
                         if a in summary]
     header2 = f"  {'Fold':<6} {'Regime':<25}"
     for a in agents_for_table:
@@ -1012,6 +1093,7 @@ def main():
             "reward": args.reward,
             "tx_cost": args.tx_cost,
             "gated": args.gated,
+            "soft_gated": args.soft_gated,
             "forecast_cost": args.forecast_cost,
             "n_folds": len(all_fold_results),
         },

@@ -629,6 +629,289 @@ class CachedGatedTradingEnv(GatedTradingEnv):
         return GatedTradingEnv._get_kronos_features(self, idx)
 
 
+class SoftGatedTradingEnv(gym.Env):
+    """
+    Trading environment where the forecast is ALWAYS provided, but with
+    a confidence score that signals how reliable it is in the current regime.
+
+    Unlike the hard-gated env (which chooses forecast or no forecast),
+    the soft gate always shows the forecast but attaches a reliability
+    signal. The agent learns to weight the forecast by this confidence.
+
+    Confidence is derived from 20-day realized volatility:
+        Low volatility  -> high confidence (forecasts tend to be reliable)
+        High volatility -> low confidence  (forecasts tend to be noisy)
+
+    Observation space (11 features):
+        0:    position
+        1:    return_20d
+        2:    return_50d
+        3:    volatility_20d
+        4:    price_vs_50ma
+        5:    kronos_expected_ret (ALWAYS present)
+        6:    kronos_trend        (ALWAYS present)
+        7:    kronos_high_vol     (ALWAYS present)
+        8:    portfolio_return
+        9:    days_in_position (normalized)
+        10:   forecast_confidence (0-1, volatility-derived)
+
+    Action space: Discrete(3) — 0=HOLD, 1=BUY, 2=SELL
+    """
+
+    metadata = {"render_modes": []}
+
+    def __init__(
+        self,
+        df: pd.DataFrame,
+        predictor,
+        test_start: str = "2020-01-01",
+        test_end: str = "2024-12-31",
+        initial_cash: float = INITIAL_CASH,
+        forecast_steps: int = FORECAST_STEPS,
+        lookback_days: int = LOOKBACK_DAYS,
+        reward_type: str = "log_return",
+        transaction_cost: float = 0.0,
+        random_start: bool = False,
+        min_episode_steps: int = 20,
+        vol_ceiling: float = 0.02,  # volatility at which confidence = 0
+    ):
+        super().__init__()
+
+        self.df = df
+        self.predictor = predictor
+        self.test_start = test_start
+        self.test_end = test_end
+        self.initial_cash = initial_cash
+        self.forecast_steps = forecast_steps
+        self.lookback_days = lookback_days
+        self.reward_type = reward_type
+        self.transaction_cost = transaction_cost
+        self.random_start = random_start
+        self.min_episode_steps = min_episode_steps
+        self.vol_ceiling = vol_ceiling
+
+        # Pre-compute step indices
+        dates = df.index
+        test_indices = [i for i, d in enumerate(dates) if d >= pd.Timestamp(test_start)]
+        test_indices = [i for i in test_indices if i >= lookback_days]
+        self.step_indices = test_indices[::forecast_steps]
+
+        # Spaces
+        self.action_space = spaces.Discrete(3)  # HOLD, BUY, SELL
+        self.observation_space = spaces.Box(
+            low=-np.inf, high=np.inf, shape=(11,), dtype=np.float32
+        )
+
+        # State variables
+        self._step_idx = 0
+        self._cash = initial_cash
+        self._shares = 0.0
+        self._prev_portfolio_value = initial_cash
+        self._days_in_position = 0
+        self._recent_returns = []
+        self._episode_start = 0
+
+    def reset(self, seed=None, options=None):
+        super().reset(seed=seed)
+
+        if self.random_start and len(self.step_indices) > self.min_episode_steps:
+            max_start = len(self.step_indices) - self.min_episode_steps
+            self._episode_start = self.np_random.integers(0, max_start)
+        else:
+            self._episode_start = 0
+
+        self._step_idx = self._episode_start
+        self._cash = self.initial_cash
+        self._shares = 0.0
+        self._prev_portfolio_value = self.initial_cash
+        self._days_in_position = 0
+        self._recent_returns = []
+
+        obs = self._get_obs()
+        info = self._get_info()
+        return obs, info
+
+    def step(self, action):
+        action = int(action)
+        idx = self.step_indices[self._step_idx]
+        price = float(self.df["close"].iloc[idx])
+        pv_before = self._portfolio_value(price)
+
+        # Execute trade
+        traded = False
+        if action == 1 and self._cash > 0:  # BUY
+            cost = self._cash * self.transaction_cost
+            self._shares = (self._cash - cost) / price
+            self._cash = 0.0
+            traded = True
+        elif action == 2 and self._shares > 0:  # SELL
+            proceeds = self._shares * price
+            cost = proceeds * self.transaction_cost
+            self._cash = proceeds - cost
+            self._shares = 0.0
+            traded = True
+
+        self._days_in_position = 0 if traded else self._days_in_position + 1
+
+        # Advance
+        self._step_idx += 1
+        terminated = self._step_idx >= len(self.step_indices)
+        truncated = False
+
+        if not terminated:
+            next_idx = self.step_indices[self._step_idx]
+            next_price = float(self.df["close"].iloc[next_idx])
+        else:
+            next_price = price
+
+        pv_after = self._portfolio_value(next_price)
+        reward = self._compute_reward(pv_before, pv_after)
+        self._prev_portfolio_value = pv_after
+        self._recent_returns.append(reward)
+
+        obs = self._get_obs() if not terminated else np.zeros(11, dtype=np.float32)
+        info = self._get_info()
+        info["portfolio_value"] = pv_after
+        info["action_taken"] = ["HOLD", "BUY", "SELL"][action]
+
+        return obs, reward, terminated, truncated, info
+
+    def _portfolio_value(self, price: float) -> float:
+        return self._cash + self._shares * price
+
+    def _compute_reward(self, pv_before: float, pv_after: float) -> float:
+        if self.reward_type == "log_return":
+            return float(np.log(pv_after / pv_before)) if pv_before > 0 else 0.0
+        elif self.reward_type == "pnl":
+            return (pv_after - pv_before) / self.initial_cash
+        elif self.reward_type == "sharpe":
+            ret = (pv_after - pv_before) / pv_before if pv_before > 0 else 0.0
+            if len(self._recent_returns) > 5:
+                vol = np.std(self._recent_returns[-20:])
+                return float(ret - 0.5 * vol)
+            return float(ret)
+        else:
+            return (pv_after - pv_before) / pv_before if pv_before > 0 else 0.0
+
+    def _get_obs(self) -> np.ndarray:
+        if self._step_idx >= len(self.step_indices):
+            return np.zeros(11, dtype=np.float32)
+
+        idx = self.step_indices[self._step_idx]
+        prices = self.df["close"].values
+        current_price = float(prices[idx])
+
+        # Position
+        position = 1.0 if self._shares > 0 else 0.0
+
+        # Recent returns
+        recent_20 = prices[max(0, idx - 20):idx]
+        recent_50 = prices[max(0, idx - 50):idx]
+        ret_20d = (current_price - float(recent_20[0])) / float(recent_20[0]) if len(recent_20) > 0 else 0.0
+        ret_50d = (current_price - float(recent_50[0])) / float(recent_50[0]) if len(recent_50) > 0 else 0.0
+
+        # Volatility
+        if len(recent_20) > 1:
+            daily_rets = np.diff(recent_20) / recent_20[:-1]
+            vol_20d = float(np.std(daily_rets))
+        else:
+            vol_20d = 0.0
+
+        # Price vs 50 MA
+        ma_50 = float(np.mean(recent_50)) if len(recent_50) > 0 else current_price
+        price_vs_50ma = (current_price - ma_50) / ma_50
+
+        # Kronos features (ALWAYS present)
+        kronos_ret, kronos_trend, kronos_high_vol = self._get_kronos_features(idx)
+
+        # Portfolio return
+        pv = self._portfolio_value(current_price)
+        portfolio_return = (pv - self.initial_cash) / self.initial_cash
+        days_norm = self._days_in_position / 50.0
+
+        # Forecast confidence: low vol -> high confidence, high vol -> low
+        confidence = max(0.0, min(1.0, 1.0 - (vol_20d / self.vol_ceiling)))
+
+        return np.array([
+            position, ret_20d, ret_50d, vol_20d, price_vs_50ma,
+            kronos_ret, kronos_trend, kronos_high_vol,
+            portfolio_return, days_norm,
+            confidence,
+        ], dtype=np.float32)
+
+    def _get_kronos_features(self, idx: int) -> tuple[float, float, float]:
+        history_df = self.df.iloc[max(0, idx - self.lookback_days):idx]
+        current_date = self.df.index[idx]
+        current_price = float(self.df["close"].iloc[idx])
+        future_dates = pd.bdate_range(
+            start=current_date, periods=self.forecast_steps + 1, freq="B"
+        )[1:]
+        forecast = get_forecast(self.predictor, history_df, future_dates)
+        closes = forecast["close"]
+        highs = forecast["high"]
+        lows = forecast["low"]
+        expected_ret = (closes[0] - current_price) / current_price
+        trend = float(np.sum(closes > current_price)) / len(closes)
+        forecast_spread = float(np.mean(highs - lows) / current_price)
+        recent_spread = float(np.mean(
+            history_df["high"].values[-20:] - history_df["low"].values[-20:]
+        ) / current_price)
+        high_vol = 1.0 if forecast_spread > (recent_spread * VOLATILITY_MULTIPLIER) else 0.0
+        return expected_ret, trend, high_vol
+
+    def _get_info(self) -> dict:
+        if self._step_idx >= len(self.step_indices):
+            return {}
+        idx = self.step_indices[self._step_idx]
+        return {
+            "date": str(self.df.index[idx].date()),
+            "price": float(self.df["close"].iloc[idx]),
+            "cash": self._cash,
+            "shares": self._shares,
+            "step": self._step_idx,
+            "total_steps": len(self.step_indices),
+        }
+
+
+class CachedSoftGatedTradingEnv(SoftGatedTradingEnv):
+    """SoftGatedTradingEnv with pre-computed Kronos forecast caching."""
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._forecast_cache = {}
+        self._cache_ready = False
+
+    def precompute_forecasts(self, verbose: bool = True):
+        total = len(self.step_indices)
+        if verbose:
+            print(f"Pre-computing Kronos forecasts for {total} steps (soft gated env)...")
+        for i, idx in enumerate(self.step_indices):
+            self._forecast_cache[idx] = SoftGatedTradingEnv._get_kronos_features(self, idx)
+            if verbose and (i + 1) % 20 == 0:
+                print(f"   {i + 1}/{total} forecasts computed")
+        self._cache_ready = True
+        if verbose:
+            print(f"   Done! {total} forecasts cached.")
+
+    def save_cache(self, path: str):
+        import json
+        serializable = {str(k): list(v) for k, v in self._forecast_cache.items()}
+        with open(path, "w") as f:
+            json.dump(serializable, f)
+
+    def load_cache(self, path: str):
+        import json
+        with open(path, "r") as f:
+            data = json.load(f)
+        self._forecast_cache = {int(k): tuple(v) for k, v in data.items()}
+        self._cache_ready = True
+
+    def _get_kronos_features(self, idx: int) -> tuple[float, float, float]:
+        if self._cache_ready and idx in self._forecast_cache:
+            return self._forecast_cache[idx]
+        return SoftGatedTradingEnv._get_kronos_features(self, idx)
+
+
 class CachedTradingEnv(TradingEnv):
     """
     TradingEnv variant that pre-computes all Kronos forecasts once,
